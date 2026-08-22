@@ -98,6 +98,29 @@ APU (celular / docks / cadeia)          ← APU-004: homogêneas
 |---|---|---|
 | TOS-023 | **100% da biblioteca de jogos Linux aceita**: Steam/Proton, DXVK/VKD3D, Box64-classe para ISA estrangeiro, controles HID — a biblioteca inteira abre no dispositivo, do bolso ao dock | decisão do arquiteto |
 
+## Software de IA: 100% dos atuais aceitos (decisão, 22/08/2026)
+
+**O requisito**: o Teia Phone aceita **100% do software de IA atual** — modelos de linguagem, geração de imagem, voz, visão, pipelines — rodando localmente, do bolso ao dock.
+
+| Camada | Papel | Estado no TeiaOS |
+|---|---|---|
+| **llama.cpp-classe (GGUF)** | o runt time universal: LLM, visão, voz (whisper.cpp) — roda em CPU, Vulkan, ROCm, qualquer ISA | a fundação — compila nativo em RISC-V |
+| **Vulkan como backend de IA** | aceleração neutra de fabricante — o mesmo Mesa/Vulkan da TOS-021 serve inferência | o motor que joga também pensa |
+| **ROCm-classe** | pilha pesada de computação nas APUs que a suportarem | opcional por unidade, nunca obrigatória |
+| **ONNX / PyTorch / safetensors** | formatos e frameworks do ecossistema | via CPU, Vulkan, ROCm conforme disponível |
+| **Box64-classe** | wheels e binários x86-64 ainda sem build nativo | o mesmo seguro da TOS-023 |
+| **Memória unificada (APU-001)** | a VRAM do sistema: 16 GB de classe da referência rodam ~13B quantizado com folga | já especificado |
+
+**As três honestidades de engenharia**:
+
+1. **"100% aceito" = roda localmente, com o desempenho da unidade** — quantizado no bolso, acelerado no dock, distribuído na cadeia (inferência exo-classe entre APUs para modelos maiores que uma unidade);
+2. **CUDA é o elefante que fica do lado de fora da porta da frente e entra pela porta de trás**: o ecossistema aberto (llama.cpp/ONNX/ROCm/Vulkan) cobre o essencial do software de IA atual; o que for exclusivo-proprietário NVIDIA de ponta a ponta é fronteira do requisito — o análogo do anti-cheat da TOS-023;
+3. **A quantização é a operação conservar da IA**: Q8→Q4 corta memória e energia por quatro, com perda de qualidade marginal — o avatar escolhe o ponto conforme a bateria.
+
+| ID | Requisito | Origem |
+|---|---|---|
+| TOS-024 | **100% do software de IA atual aceito, localmente**: runtimes universais (GGUF-classe), Vulkan como backend neutro, ROCm onde houver, Box64 para binários x86, memória unificada como VRAM e cadeia de APUs para modelos maiores que uma unidade | decisão do arquiteto |
+
 ## A leitura energética
 
 Cada parâmetro tem dimensão energética: base mínima = menos código em execução permanente; imutável = sistema sem *drift*, sem reinstalação de resgate; atualização atômica = **nenhum sistema quebrado pela metade** (a reinstalação é o maior desperdício de software); rollback = anti-desperdício institucionalizado. E a ponte Android (TOS-020) é o que impede o desperdício supremo: **um sistema perfeito que ninguém usa por falta de apps**.
