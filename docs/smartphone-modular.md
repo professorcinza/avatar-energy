@@ -29,7 +29,7 @@
 |---|---|---|---|
 | **Carcaça-estrutura** | frame, vedações, botões | 8–10 anos | nunca (o " chassis da civilização pessoal") |
 | **Módulo computação** | SoC + RAM (sem storage — ver MOD-015) | 4–6 anos | 1–2 upgrades por década |
-| **Módulo energia** | bateria padronizada | 2–3 anos (500–800 ciclos) | 3–4 por década |
+| **Módulo energia** | bateria dupla (ver MOD-017): interna de ponte + externa trocável a quente | interna: vida da carcaça; externa: 2–3 anos (500–800 ciclos) | 3–4 por década |
 | **Módulo tela** | display + touch | 3–5 anos (dano) | sob demanda |
 | **Módulo câmera** | sensores + óptica | 5–6 anos | opcional |
 | **Módulo comunicação** | modem/rádios | 6–8 anos | na virada de geração de rede (5G→6G) |
@@ -139,6 +139,7 @@ carcaça celular (8–10 anos)
 | MOD-014 | **abertura total com exceções raras**: toda peça que compõe o dispositivo tem arquitetura aberta (esquemas, documentação, driver mainline); exceção exige registro EXC com justificativa e plano de substituição | rascunho |
 | MOD-015 | **sem storage interno**: o armazenamento é microSD externo — slot **microSD Express (NVMe sobre PCIe)**, bootável, trocável a quente com o sistema parado. O cartão carrega SO + dados, criptografados de ponta a ponta (TOS-001); sem cartão, a carcaça é casca vazia. O storage vira módulo de verdade: cresce, troca-se e migra entre carcaças | rascunho |
 | MOD-016 | **SIM externo de fácil troca**: slot nano-SIM acessível pela borda, sem ferramenta e sem desmontar módulo algum, com troca a quente suportada (o modem reassocia sem reboot); mínimo 1× nano-SIM, 2× desejável; **SIM físico é o caminho primário — eSIM no máximo como secundário opcional, nunca o único**: a identidade de rede pertence ao usuário, não à operadora; lock de operadora é violação de spec | rascunho |
+| MOD-017 | **bateria dupla classe Power Bridge**: uma **interna de ponte** (soldada à vida da carcaça, capacidade para sustentar o sistema durante a troca + reserva de emergência) e uma **externa trocável a quente** (o módulo MOD-002, reserva principal de energia). Troca sem desligar: a interna ponteia o intervalo. Lógica de carga: a externa alimenta e mantém a interna; sem externa, a interna sustenta funções essenciais em modo de economia. Precedente: Power Bridge dos ThinkPads T440–T480 — provado e abandonado por finura; ressuscitado aqui porque modularidade > espessura | rascunho |
 
 ---
 
