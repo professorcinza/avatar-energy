@@ -34,6 +34,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Integrações de conteúdo](docs/integracoes-conteudo.md) | Imaginação e treino: spec INK (mundos-contratos que obedecem à bateria) e CIVG (o jogo como prova SDD e simulador CIV) |
 | [Contorno de hardware](docs/contorno-hardware.md) | Antenas, térmica, bancada e regulatório — com o trunfo da certificação por módulo |
 | [Interface e serviços](docs/interface-e-servicos.md) | IHU (tela por resultado, acessibilidade como lei, jack 3,5), MIG (migração sem nuvem) e ACS (atualização P2P) |
+| [Governança e meta](docs/governanca-e-meta.md) | GOV (a fundação que sobrevive às pessoas), i18n (PT·EN·ZH) e FMT (a gramática da esteira) |
 
 ## Diretórios de trabalho
 

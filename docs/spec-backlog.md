@@ -28,8 +28,8 @@
 | **APL — aplicativos e loja** ✅ (parcial) | APL-001..007 | (coberto: F-Droid como spec base, TOS-027; falta o SDK de desenvolvedor) repositório de apps (Flatpak-class), assinatura, UI de permissões, SDK que desenvolvedores visam — sem devs não há ecossistema |
 | **MIG — migração** ✅ | MIG-001..005 | (base 23) |
 | **ACS — atualização** ✅ | ACS-001..004 | (base 23) |
-| **GOV — fundação** | GOV-001+ | estatuto da fundação neutra (SYS-006), financiamento, direitos de decisão, sucessão — a instituição que sobrevive às pessoas |
-| **INT-i18n** | — | localização: PT/EN/ZH mínimos em tudo (a ponte fala três línguas) |
+| **GOV — fundação** ✅ | GOV-001..006 | (base 24) |
+| **INT-i18n** ✅ | I18N-001..003 | (base 24) |
 
 ## 1.5 · Gaps descobertos após MOD-015–019
 
@@ -38,7 +38,11 @@
 | **ANT — antenas** ✅ | ANT-001..006 | (base 22) |
 | **FRI — refrigeração** ✅ | FRI-001..004 | (base 22) |
 | **RIG — bancada** ✅ | RIG-001..004 | (base 22) |
-| **FMT — formato de spec-repo** 🟡 | a esteira EST exige repositórios de spec validáveis: falta o formato padrão (a gramática que o lint da EST-002 aceita) |
+| **FMT — formato de spec-repo** ✅ | FMT-001..005 | (base 24) |
+
+## Todos os domínios do backlog estão especificados ✅
+
+Restam apenas os itens do arquiteto: **M-1** (passagem de revisão — mover specs de rascunho→revisado), **S1** (onde o avatar vive) e **S3** (a inteligência do avatar).
 
 ## 2 · Ordem sugerida
 
