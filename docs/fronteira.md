@@ -22,6 +22,9 @@
 
 **Solar perovskita e tandemas** 🛫 — células tandemas perovskita/silício com ~34% de recorde em laboratório; linhas-piloto em linha. A solar comum já é a energia mais barata da história; a tandema empurra o teto.
 
+
+**Solar transparente / invisível** 🛫
+- Recorde dinamarquês: célula **totalmente transparente a 12,3% de eficiência com ~30% de transparência visível** (2025) — os claros plenos ficavam em 1–5%; semitransparentes em 7–12%; a opaca de referência: ~23%; marco ARENA/Austrália: **2 m² transparentes = 1 painel de telhado padrão**; Coreia: "PV invisível" ~10× os protótipos. O que destrava: **BIPV** — o vidro das fachadas vira geração; o parque imobiliário existente, usina. Honestidade física: transparência e eficiência disputam os mesmos fótons — o recorde é justamente o equilíbrio inédito dos dois.
 **Geotérmica avançada (EGS)** 🛫 — fraturamento para geotermia em qualquer lugar (Fervo e afins): energia firme 24/7 sem combustível.
 
 **Betavoltaica** 🔬 — pilhas de decaimento nuclear para microdispositivos de décadas sem recarga; nichos primeiro (sensores, implants).

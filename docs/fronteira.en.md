@@ -19,6 +19,9 @@
 
 **Perovskite and tandem solar** 🛫 — perovskite/silicon tandems at ~34% lab record; pilot lines in progress. Ordinary solar is already the cheapest energy in history; tandems raise the ceiling.
 
+
+**Transparent / invisible solar** 🛫
+- Danish record: **fully transparent cell at 12.3% efficiency with ~30% visible transparency** (2025) — fully clear stood at 1–5%, semi-transparent at 7–12%; opaque reference: ~23%; ARENA/Australia milestone: **2 m² transparent = 1 standard rooftop panel**; Korea: "invisible PV" ~10× early prototypes. What it unlocks: **BIPV** — facade glass becomes generation; the existing building stock, a power plant. Physics honesty: transparency and efficiency compete for the same photons — the record is precisely the unprecedented balance of both.
 **Enhanced geothermal (EGS)** 🛫 — fracturing for geothermal anywhere: firm 24/7 carbon-free energy.
 
 **Betavoltaics** 🔬 — nuclear-decay cells for decades-long micro-devices; niches first (sensors, implants).
