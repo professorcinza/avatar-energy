@@ -140,6 +140,7 @@ O TeiaOS integra-se com os sistemas herdados em três círculos — **rodar o so
 | ID | Requisito | Origem |
 |---|---|---|
 | TOS-025 | **layer de integração legada**: rodar (INT-1/2), conversar (INT-3/4) e receber (INT-5) — com fronteira binária do macOS registrada (INT-6) e formatos abertos como nativos (INT-7) | decisão do arquiteto |
+| TOS-026 | **disciplina de storage em cartão** (par do MOD-015): swap em RAM (zram), nunca em cartão; logs em RAM até sincronização; base de sistema imutável (TOS-012) = leitura dominante, desgaste minimizado; criptografia de bloco obrigatória no cartão inteiro | decisão do arquiteto |
 
 ## A leitura energética
 

@@ -28,7 +28,7 @@
 | Módulo | Conteúdo | Vida projetada | Cadência de troca |
 |---|---|---|---|
 | **Carcaça-estrutura** | frame, vedações, botões | 8–10 anos | nunca (o " chassis da civilização pessoal") |
-| **Módulo computação** | SoC + RAM + armazenamento | 4–6 anos | 1–2 upgrades por década |
+| **Módulo computação** | SoC + RAM (sem storage — ver MOD-015) | 4–6 anos | 1–2 upgrades por década |
 | **Módulo energia** | bateria padronizada | 2–3 anos (500–800 ciclos) | 3–4 por década |
 | **Módulo tela** | display + touch | 3–5 anos (dano) | sob demanda |
 | **Módulo câmera** | sensores + óptica | 5–6 anos | opcional |
@@ -137,6 +137,7 @@ carcaça celular (8–10 anos)
 | MOD-012 | **v4 — hierarquia APU** (ver seção acima; substitui soquete de GPU e eGPU): celular, docks e docks extras — todos APU homogêneas, encadeáveis sob demanda | rascunho |
 | MOD-013 | **carcaça-jogo (gamepad)**: o smartphone encaixa em paisagem e vira portátil estilo PSP — dual sticks, D-pad, botões, gatilhos, vibração, bateria que carrega o módulo; entrada como HID padrão (evdev/SDL, mainline); variante com APU própria que entra na hierarquia MOD-012 v4 para jogos exigentes | rascunho |
 | MOD-014 | **abertura total com exceções raras**: toda peça que compõe o dispositivo tem arquitetura aberta (esquemas, documentação, driver mainline); exceção exige registro EXC com justificativa e plano de substituição | rascunho |
+| MOD-015 | **sem storage interno**: o armazenamento é microSD externo — slot **microSD Express (NVMe sobre PCIe)**, bootável, trocável a quente com o sistema parado. O cartão carrega SO + dados, criptografados de ponta a ponta (TOS-001); sem cartão, a carcaça é casca vazia. O storage vira módulo de verdade: cresce, troca-se e migra entre carcaças | rascunho |
 
 ---
 
