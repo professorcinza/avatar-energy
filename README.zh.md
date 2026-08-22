@@ -35,6 +35,8 @@
 | [硬件边界](docs/contorno-hardware.md) | 天线、热、台架、法规——按模块认证 *(葡)* |
 | [界面与服务](docs/interface-e-servicos.md) | IHU、MIG（无云迁移）、ACS（P2P 更新） *(葡)* |
 | [治理与元](docs/governanca-e-meta.md) | GOV（比人长寿的基金会）、i18n、FMT（流水线文法） *(葡)* |
+| [第二月球](docs/segunda-lua.zh.md) | 地球成为有意的反射体：先例（Znamya、成都）、至纯的重定向——探索性 |
+| [工业浪费](docs/desperdicio-industrial.zh.md) | 一次性品的算术：两个向量、业务根源（Phoebus→HAGE）、反规格 |
 
 ## 工作目录
 

@@ -35,6 +35,8 @@ A project of the [ponte-brasil-china](https://github.com/professorcinza/ponte-br
 | [Hardware perimeter](docs/contorno-hardware.md) | Antennas, thermal, bench, regulatory — certification per module *(PT)* |
 | [Interface and services](docs/interface-e-servicos.md) | IHU, MIG (cloudless migration), ACS (P2P updates) *(PT)* |
 | [Governance and meta](docs/governanca-e-meta.md) | GOV (the foundation that outlives people), i18n, FMT (the pipeline grammar) *(PT)* |
+| [The Second Moon](docs/segunda-lua.en.md) | Earth as deliberate reflector: precedents (Znamya, Chengdu), redirect in purity — exploratory |
+| [Industrial waste](docs/desperdicio-industrial.en.md) | The arithmetic of the disposable: two vectors, the business root (Phoebus→HAGE), the counter-specs |
 
 ## Working directories
 
