@@ -56,6 +56,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Engenharia reversa: eólica](docs/reverse-eolica.md) | Turbinas 26 MW, flutuante 94,6 MW operacional, páss reciclável e as 6 práticas de adoção — com o caso Brasil |
 | [Os problemas nucleares](docs/problemas-nuclear.md) | Os 13 grupos: categóricos, econômicos e temporais — a referência da casa para qualquer debate nuclear |
 | [Nó de Malha MOD](docs/no-malha-mod.md) | MN-001..024: o primeiro produto MOD além do Teia Phone — a infraestrutura física da teia, autoalimentada por luz, ≤ US$ 50 |
+| [Geladeira MOD](docs/geladeira-mod.md) | REF-001..024: conservação em módulos — carcaça VIP 15 anos, compressor inverter girável, ≤ 200 kWh/ano, ≤ US$ 400 |
 
 ## Versão oficial em PDF
 

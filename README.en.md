@@ -43,6 +43,7 @@ A project of the [ponte-brasil-china](https://github.com/professorcinza/ponte-br
 | [Reverse engineering: wind](docs/reverse-eolica.en.md) | 26 MW turbines, 94.6 MW floating operational, recyclable blades and 6 adoption practices — with Brazil's case |
 | [The nuclear problems](docs/problemas-nuclear.en.md) | The 13 groups: categorical, economic and temporal — the house's reference for any nuclear debate |
 | [MOD Mesh Node](docs/no-malha-mod.en.md) | MN-001..024: first MOD product beyond the Teia Phone — the web's physical infrastructure, self-powered by light, ≤ $50 |
+| [MOD Refrigerator](docs/geladeira-mod.en.md) | REF-001..024: conservation in modules — 15-yr VIP chassis, rotating inverter compressor, ≤ 200 kWh/yr, ≤ $400 |
 
 ## Working directories
 

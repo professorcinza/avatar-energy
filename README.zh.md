@@ -43,6 +43,7 @@
 | [逆向工程：风电](docs/reverse-eolica.zh.md) | 26 MW 风机、94.6 MW 浮式运行、可回收叶片与六项采纳实践——附巴西案例 |
 | [核能之问题](docs/problemas-nuclear.zh.md) | 十三组问题：绝对性、经济性与时间性——本家核辩论之参考 |
 | [MOD 网状网节点](docs/no-malha-mod.zh.md) | MN-001..024：Teia Phone 之外首个 MOD 产品——网之物理基础设施，光能自供，≤ $50 |
+| [MOD 冰箱](docs/geladeira-mod.zh.md) | REF-001..024：模块化保鲜——15 年 VIP 外壳、轮换变频压缩机、≤ 200 kWh/年、≤ $400 |
 
 ## 工作目录
 
