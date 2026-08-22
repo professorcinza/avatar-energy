@@ -19,6 +19,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Engenharia reversa: smartphone custo-efetivo](docs/reverse-smartphone.md) | Moto G Power 2026 sob a lente de energia: 20 Wh, 420 mW médios e a economia do armazenamento |
 | [Veredito: universalização do Android](docs/veredito-universalizacao.md) | SIM, por ~10:1 — a aritmética de ciclo de vida que decide fragmentação × universalização |
 | [A fronteira](docs/fronteira.md) | O cutting edge por camada: fusão, sódio-ion, ferro-ar, Landauer — com data, estado e fonte |
+| [O smartphone modular](docs/smartphone-modular.md) | O modelo MOD da carcaça aberta: 6 módulos, vidas assimétricas, −55% de energia incorporada por ano |
 
 ## Licenças
 

@@ -1,0 +1,73 @@
+# O smartphone modular: o modelo da carcaça aberta
+
+**Avatar-Energy · Documento base 09 · 22 de agosto de 2026**
+
+*Retomo o artefato da base 06 e a lição da base 07 (longevidade vence otimização local) para estabelecer um modelo baseado em modularidade: a carcaça aberta.*
+
+---
+
+## A era da carcaça aberta — arqueologia honesta
+
+| Projeto | Anos | Proposta | Destino |
+|---|---|---|---|
+| **Phonebloks** | 2013 | conceito viral de blocos encaixáveis | virou manifesto, não produto |
+| **Project Ara** (Google/ATAP) | 2014–16 | frame com slots, módulos trocáveis a quente, ímãs eletropermanentes | **cancelado em 2016**, às vésperas da conferência de desenvolvedores |
+| **LG G5 / Moto Mods** | 2016–18 | módulos como acessórios | fracasso comercial (G5); nicho (Mods) |
+| **Fairphone** | 2013–hoje | modularidade moderada: peças substituíveis pelo usuário | **sobreviveu**: nota 10/10 de reparabilidade, 8–10 anos de suporte |
+| **Framework (laptop)** | 2021–hoje | placa-mãe e partes padronizadas | prova que o modelo funciona em computadores |
+| **UE — Regulamento de Baterias 2023/1542** | →2027 | bateria substituível pelo usuário **obrigatória** | a modularidade parcial voltou por lei |
+
+**Por que o Ara falhou e o Fairphone vive**: o Ara apostou em modularidade *fina* — 11 slots, troca a quente, barramento complexo — que adicionava espessura, custo e vínculos com operadoras, contra a economia de escala da miniaturização integrada. O Fairphone apostou em modularidade *grosseira* — 6 a 8 peças substituíveis a frio, sem ambição de troca na hora — e entrega o que importa: **vida útil**.
+
+## O modelo: MOD — carcaça aberta de granularidade moderada
+
+**Princípio**: a carcaça é a única parte que não se troca. Tudo mais é módulo padrão, interface publicada, troca a frio.
+
+| Módulo | Conteúdo | Vida projetada | Cadência de troca |
+|---|---|---|---|
+| **Carcaça-estrutura** | frame, vedações, botões | 8–10 anos | nunca (o " chassis da civilização pessoal") |
+| **Módulo computação** | SoC + RAM + armazenamento | 4–6 anos | 1–2 upgrades por década |
+| **Módulo energia** | bateria padronizada | 2–3 anos (500–800 ciclos) | 3–4 por década |
+| **Módulo tela** | display + touch | 3–5 anos (dano) | sob demanda |
+| **Módulo câmera** | sensores + óptica | 5–6 anos | opcional |
+| **Módulo comunicação** | modem/rádios | 6–8 anos | na virada de geração de rede (5G→6G) |
+
+**Regras de design** (aprendidas dos mortos):
+1. Troca a frio, nunca a quente — sem barramento em tempo real, sem overhead de execução;
+2. Interfaces publicadas e sem cola — pinagem aberta, parafusos padrão;
+3. Granularidade moderada — 6 módulos, não 11 slots;
+4. Software universal (base 07): driver de cada módulo no kernel principal — módulo novo não exige ROM nova;
+5. Regulação como escala: a exigência europeia de bateria substituível (2027) cria mercado de massa para o conector padrão.
+
+## A aritmética energética do modelo
+
+Estimativas com distribuição típica de energia incorporada: carcaça+placa ~65%, tela ~18%, bateria ~12%, câmera ~5%.
+
+**Integrated (base 06)**: vida ~3 anos → custo incorporado ≈ E/3 ≈ **0,33E/ano**.
+
+**MOD**: vida 8 anos = 1 carcaça (0,65E) + 3 baterias (0,36E) + 1 tela (0,18E) + meia câmera (0,025E) ≈ 1,21E/8 ≈ **0,15E/ano**.
+
+**Redução de ~55% da energia incorporada por ano de serviço — fator ~2,2×** — antes de contar o upgrade do módulo computação (que estende a vida além dos 8 anos sem refabricar os 65%).
+
+Mesma lei da base 07, agora no hardware: **penalidade pequena no elo de execução** (vedações e conectores: alguns % de espessura/eficiência) **contra ganho grande na cadeia** (fabricação dominante).
+
+## O avatar no bolso modular
+
+Com módulos de vidas assimétricas, surge um problema de otimização real e inédito — **o agendamento de upgrades**: qual módulo trocar, em que ano, para minimizar a energia total de uma década de serviço, dadas a degradação de cada parte e a curva de software?
+
+É a operação **alocar** aplicada ao cidadão: o avatar da base 03, na camada de gestão, agora com decisão concreta, mensurável e resolvível. O modelo MOD entrega ao projeto seu primeiro problema de otimização de corpo inteiro.
+
+## Requisitos (formato spec, para revisão do arquiteto)
+
+| ID | Requisito | Status |
+|---|---|---|
+| MOD-001 | carcaça com vida ≥ 8 anos, sem cola, parafusos padrão | rascunho |
+| MOD-002 | bateria substituível em < 1 min sem ferramenta exótica | rascunho |
+| MOD-003 | conector de módulo publicado, livre de royalties | rascunho |
+| MOD-004 | driver de cada módulo mainline no kernel universal | rascunho |
+| MOD-005 | módulo computação intercambiável entre gerações de carcaça | rascunho |
+| MOD-006 | energia incorporada por ano de serviço ≤ 50% do integrado | rascunho |
+
+---
+
+*Código AGPL-3.0-or-later · Conteúdo CC BY-SA 4.0. Arquitetura e autoria: Cleiton Moura Loura.*
