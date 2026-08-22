@@ -1,8 +1,8 @@
-# O sistema canônico Linux Phone
+# O sistema canônico Teia Phone
 
 **Avatar-Energy · Documento base 12 · 22 de agosto de 2026**
 
-**NOME DO ARQUITETO (22/08/2026)**: o sistema que o smartphone roda chama-se **Linux Phone**. Uma árvore, um nome, um produto.
+**NOME DO ARQUITETO (22/08/2026)**: o sistema que o smartphone roda chama-se **Teia Phone** *(anteriormente "Linux Phone", renomeado pelo arquiteto no mesmo dia)*. Uma árvore, um nome, um produto — e a marca se une à família TEIA.
 
 *Direção do arquiteto: distribuições são desperdício de energia. O Linux Phone será **um sistema canônico** — dirigido por uma pessoa do nível de Linus Torvalds, sobre o kernel Linux, código aberto, como o mainline das atualizações e o mais recente que existe. É o modelo de governança do kernel aplicado à pilha inteira.*
 

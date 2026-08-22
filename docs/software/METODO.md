@@ -2,7 +2,7 @@
 
 **Avatar-Energy · docs/software/ · 22 de agosto de 2026**
 
-*Escopo definido pela arquitetura: o SO é o **Linux Phone** — sistema canônico (base 12) construído pela comunidade; o projeto contribui upstream (SYS-005), nunca bifurca. O software do projeto é **o avatar**: a camada de Gestão da base 03 como código.*
+*Escopo definido pela arquitetura: o SO é o **Teia Phone** — sistema canônico (base 12) construído pela comunidade; o projeto contribui upstream (SYS-005), nunca bifurca. O software do projeto é **o avatar**: a camada de Gestão da base 03 como código.*
 
 ---
 
