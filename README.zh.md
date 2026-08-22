@@ -42,6 +42,7 @@
 | [逆向工程：太阳能](docs/reverse-solar.zh.md) | 四条实测前沿：叠层 35.5%、透明 12.3%、有机 >21%、室内 38%——及各自入 MOD 之处 |
 | [逆向工程：风电](docs/reverse-eolica.zh.md) | 26 MW 风机、94.6 MW 浮式运行、可回收叶片与六项采纳实践——附巴西案例 |
 | [核能之问题](docs/problemas-nuclear.zh.md) | 十三组问题：绝对性、经济性与时间性——本家核辩论之参考 |
+| [MOD 网状网节点](docs/no-malha-mod.zh.md) | MN-001..024：Teia Phone 之外首个 MOD 产品——网之物理基础设施，光能自供，≤ $50 |
 
 ## 工作目录
 

@@ -55,6 +55,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Engenharia reversa: solar](docs/reverse-solar.md) | Quatro frentes medidas: tandem 35,5%, invisível 12,3%, orgânica >21%, indoor 38% — e onde cada uma entra no MOD |
 | [Engenharia reversa: eólica](docs/reverse-eolica.md) | Turbinas 26 MW, flutuante 94,6 MW operacional, páss reciclável e as 6 práticas de adoção — com o caso Brasil |
 | [Os problemas nucleares](docs/problemas-nuclear.md) | Os 13 grupos: categóricos, econômicos e temporais — a referência da casa para qualquer debate nuclear |
+| [Nó de Malha MOD](docs/no-malha-mod.md) | MN-001..024: o primeiro produto MOD além do Teia Phone — a infraestrutura física da teia, autoalimentada por luz, ≤ US$ 50 |
 
 ## Versão oficial em PDF
 

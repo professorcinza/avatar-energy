@@ -42,6 +42,7 @@ A project of the [ponte-brasil-china](https://github.com/professorcinza/ponte-br
 | [Reverse engineering: solar](docs/reverse-solar.en.md) | Four fronts measured: tandem 35.5%, transparent 12.3%, organic >21%, indoor 38% — and where each enters the MOD |
 | [Reverse engineering: wind](docs/reverse-eolica.en.md) | 26 MW turbines, 94.6 MW floating operational, recyclable blades and 6 adoption practices — with Brazil's case |
 | [The nuclear problems](docs/problemas-nuclear.en.md) | The 13 groups: categorical, economic and temporal — the house's reference for any nuclear debate |
+| [MOD Mesh Node](docs/no-malha-mod.en.md) | MN-001..024: first MOD product beyond the Teia Phone — the web's physical infrastructure, self-powered by light, ≤ $50 |
 
 ## Working directories
 
