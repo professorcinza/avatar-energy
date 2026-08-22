@@ -28,6 +28,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [TeiaOS: parâmetros GrapheneOS](docs/reverse-grapheneos.md) | O referencial de segurança desmontado: TOS-001–010 |
 | [TeiaOS: Ubuntu Phone e distros](docs/reverse-ubuntu-distros.md) | O visionário morto e as vivas: TOS-011–028, motor gráfico Mesa+Wayland, jogos, IA, integração legada, F-Droid, terminal |
 | [Convergência do ecossistema](docs/convergencia-ecossistema.md) | Cada projeto existente com papel no Teia Phone: mente, método, teia, vigília, imaginação, treino |
+| [Rede em malha: spec MAL](docs/mal-rede-em-malha.md) | Reverse spec da teia-rede: swarm, gossip, assinaturas e o teste da queda geral |
 
 ## Diretórios de trabalho
 
