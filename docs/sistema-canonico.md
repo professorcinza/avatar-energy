@@ -36,7 +36,7 @@ Cada distribuição duplica: empacotamento, testes, fazendas de compilação, mi
 
 ## Por que "nível Torvalds" é requisito, não figura de estilo
 
-O kernel funciona porque seu árbitro reúne três coisas raras: **autoridade técnica** (decide com base em mérito, não cargo), **compromisso de décadas** (o mainline não pode ter dono rotativo), e **imparcialidade** (não pertence a fornecedor nenhum). O sistema canônico do Linux Phone exige o mesmo perfil — e uma fundação neutra que garanta que o projeto sobrevive à pessoa.
+O kernel funciona porque seu árbitro reúne três coisas raras: **autoridade técnica** (decide com base em mérito, não cargo), **compromisso de décadas** (o mainline não pode ter dono rotativo), e **imparcialidade** (não pertence a fornecedor nenhum). O sistema canônico do Teia Phone exige o mesmo perfil — e uma fundação neutra que garanta que o projeto sobrevive à pessoa.
 
 ## Especificações do sistema canônico
 
