@@ -2,7 +2,9 @@
 
 **Avatar-Energy · Documento base 11 · 22 de agosto de 2026**
 
-*Tese do arquiteto: o Android será substituído pelo Linux Phone, já que o RISC-V roda Linux nativamente. **Veredito: convergência certa, substituição improvável, kernel unificado inevitável — com correção de mecanismo.***
+*Tese do arquiteto: o Android será substituído pelo Linux Phone, já que o RISC-V roda Linux nativamente.*
+
+**DECISÃO DO ARQUITETO (22/08/2026)**: *as distribuições de sistema operacional para o smartphone serão feitas pela comunidade.* O projeto define o hardware e publica suas especificações; **não escolhe, não acompanha e não endossa distribuição alguma** — agnosticismo total de stack. O que segue é análise técnica, não direção.
 
 ---
 

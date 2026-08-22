@@ -67,6 +67,7 @@ Com módulos de vidas assimétricas, surge um problema de otimização real e in
 | MOD-004 | driver de cada módulo mainline no kernel universal | rascunho |
 | MOD-005 | módulo computação intercambiável entre gerações de carcaça | rascunho |
 | MOD-006 | energia incorporada por ano de serviço ≤ 50% do integrado | rascunho |
+| MOD-007 | o projeto não escolhe distribuição de SO: documentação completa para que **qualquer comunidade porte a sua** | rascunho |
 
 ---
 
