@@ -57,7 +57,7 @@ Mais os dois produtos-algoritmo já previstos: **orquestrador da cadeia de APUs*
 6. `auditoria.md` — perdas por elo, relatório de cadeia (base 04)
 7. `agendador-upgrade.md` — a otimização de década da base 09
 
-**Regras herdadas**: AGPL-3.0 (política do ecossistema); upstream-first para tudo que tocar kernel/Mesa; energia do próprio avatar medida — o medidor também gasta, e se contabiliza.
+**Regras herdadas**: Spec Driven Development é o padrão do ecossistema ([norma no hub](https://github.com/professorcinza/ponte-brasil-china/blob/main/docs/spec-driven-development.md)) — nenhuma linha de código sem spec, nenhuma spec sem verificação; AGPL-3.0 (política do ecossistema); upstream-first para tudo que tocar kernel/Mesa; energia do próprio avatar medida — o medidor também gasta, e se contabiliza.
 
 ## Papéis
 
