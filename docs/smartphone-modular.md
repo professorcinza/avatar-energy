@@ -57,6 +57,22 @@ Com módulos de vidas assimétricas, surge um problema de otimização real e in
 
 É a operação **alocar** aplicada ao cidadão: o avatar da base 03, na camada de gestão, agora com decisão concreta, mensurável e resolvível. O modelo MOD entrega ao projeto seu primeiro problema de otimização de corpo inteiro.
 
+## Fator de forma: uma mão, estilo Apple clássico
+
+Decisão do arquiteto (22/08/2026): o MOD adota o padrão de uso com uma mão — a ergonomia da era iPhone SE/mini, não a de tablet de bolso.
+
+| Medida | Alvo | Referência clássica |
+|---|---|---|
+| Largura | ≤ 68 mm | iPhone SE/8: 67,3 mm |
+| Tela | 4,7–5,4" | SE 2020: 4,7" · mini: 5,4" |
+| Altura | ≤ 145 mm | SE: 138,4 mm |
+| Peso | ≤ 160 g | SE: 148 g · mini: 135–141 g |
+| Espessura | ≤ 10 mm (tolerância da modularidade) | SE: 7,3 mm — o módulo cobre a diferença |
+
+**Por que a modularidade viabiliza o formato pequeno**: a objeção histórica ao celular de uma mão era a bateria pequena. Com módulo de energia trocável, a autonomia deixa de ser propriedade da carcaça — leva-se uma reserva no bolso (0,10E por módulo, troca a frio em < 1 min).
+
+**Leitura energética**: tela é o maior consumo em execução; ~5,4" contra ~6,8" correntes ≈ **~40% menos área iluminada** — o formato pequeno corta o elo dominante do consumo em uso, e a carcaça menor reduz a energia incorporada do chassi que nunca se troca.
+
 ## Requisitos (formato spec, para revisão do arquiteto)
 
 | ID | Requisito | Status |
@@ -67,7 +83,8 @@ Com módulos de vidas assimétricas, surge um problema de otimização real e in
 | MOD-004 | driver de cada módulo mainline no kernel universal | rascunho |
 | MOD-005 | módulo computação intercambiável entre gerações de carcaça | rascunho |
 | MOD-006 | energia incorporada por ano de serviço ≤ 50% do integrado | rascunho |
-| MOD-007 | o projeto não escolhe distribuição de SO: documentação completa para que **qualquer comunidade porte a sua** | rascunho |
+| MOD-007 | **v2** — sem distribuições: o alvo único é o sistema canônico (base 12); a comunidade contribui ao mainline | rascunho |
+| MOD-008 | fator de forma uma mão: largura ≤ 68 mm, tela 4,7–5,4", altura ≤ 145 mm, peso ≤ 160 g, espessura ≤ 10 mm | rascunho |
 
 ---
 
