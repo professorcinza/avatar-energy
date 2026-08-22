@@ -1,12 +1,21 @@
 # Avatar-Energy
 
-Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/ponte-brasil-china), anunciado em 22 de agosto de 2026.
+**O agente da energia.**
 
-**Estado: em definição pelo arquiteto.** Conceito, função e propósito serão publicados aqui tão logo sejam apresentados — este repositório reserva o nome e o lugar do projeto, nos termos do Artigo 6 da [Carta de Colaboração](https://github.com/professorcinza/ponte-brasil-china/blob/main/docs/open-collaboration-charter/pt.md).
+A função deste projeto é **maximizar, redirecionar, alocar, conservar, armazenar, distribuir e minimizar desperdício de energia** — as sete operações que cobrem o ciclo completo da energia, da fonte ao uso.
+
+Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/ponte-brasil-china), regido pelo Artigo 6 da [Carta de Colaboração](https://github.com/professorcinza/ponte-brasil-china/blob/main/docs/open-collaboration-charter/pt.md).
+
+## Documentos
+
+| Documento | Conteúdo |
+|---|---|
+| [Conceito](docs/conceito.md) | As sete operações, o ciclo da energia e o papel do avatar |
+| [Fundamentos da energia](docs/energia-fundamentos.md) | Definição, formas, fontes, vetores e fronteira |
 
 ## Licenças
 
-Conforme a Política de Invenção Aberta do ecossistema:
+Conforme a [Política de Invenção Aberta](https://github.com/professorcinza/ponte-brasil-china/blob/main/docs/open-invention-policy/pt.md) do ecossistema:
 
 - **Código**: GNU AGPL-3.0-or-later
 - **Conteúdo**: CC BY-SA 4.0
