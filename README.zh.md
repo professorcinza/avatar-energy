@@ -41,6 +41,7 @@
 | [不可或缺者](docs/indispensavel.zh.md) | 自水电而下：逐件判词与综合——功能（firm、输、配），而非来源 |
 | [逆向工程：太阳能](docs/reverse-solar.zh.md) | 四条实测前沿：叠层 35.5%、透明 12.3%、有机 >21%、室内 38%——及各自入 MOD 之处 |
 | [逆向工程：风电](docs/reverse-eolica.zh.md) | 26 MW 风机、94.6 MW 浮式运行、可回收叶片与六项采纳实践——附巴西案例 |
+| [核能之问题](docs/problemas-nuclear.zh.md) | 十三组问题：绝对性、经济性与时间性——本家核辩论之参考 |
 
 ## 工作目录
 
