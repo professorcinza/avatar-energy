@@ -48,6 +48,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Contorno de hardware](docs/contorno-hardware.md) | Antenas, térmica, bancada e regulatório — com o trunfo da certificação por módulo |
 | [Interface e serviços](docs/interface-e-servicos.md) | IHU (tela por resultado, acessibilidade como lei, jack 3,5), MIG (migração sem nuvem) e ACS (atualização P2P) |
 | [Governança e meta](docs/governanca-e-meta.md) | GOV (a fundação que sobrevive às pessoas), i18n (PT·EN·ZH) e FMT (a gramática da esteira) |
+| [A Segunda Lua](docs/segunda-lua.md) | A Terra como refletor deliberado: precedentes (Znamya, Chengdu), a operação redirecionar em pureza e as três honestidades — base exploratória |
 
 ## Versão oficial em PDF
 
