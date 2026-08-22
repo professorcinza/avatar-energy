@@ -91,7 +91,30 @@ carcaça celular (8–10 anos)
 
 **A leitura energética**: o dock-notebook é uma carcaça **sem cérebro** — sem SoC, sem RAM, sem armazenamento: ~40–60% da energia incorporada de um notebook, e como carcaça que é, **vive 10+ anos atravessando gerações de módulo**. Quem tem celular + dock abre mão do segundo computador inteiro: uma aritmética de ~1 computador menos por pessoa, por década — a mesma economia da base 09 aplicada na escala de cima. E a bateria do dock devolve: carrega o celular enquanto encaixado (PD bidirecional).
 
-**GPU integrada e modular: a filosofia MOD vira fractal** — a GPU não é externa nem mora no bolso: **os docks vêm com motor gráfico integrado em soquete próprio**, girável entre gerações. A carcaça-do-celular gira módulos (base 09); a carcaça-do-dock gira GPUs — o mesmo princípio, dois níveis. Ganhos da otimização: sem caixa eGPU extra, sem cabo, sem fonte dedicada — a alimentação e refrigeração do dock servem tudo; uma única GPU por estação, compartilhada entre usos (render, jogo, inferência), e o caminho de upgrade fica no soquete, sem aposentar a carcaça. No modo mobile, o GPU integrado do SoC basta — potência onde há orçamento térmico, zero onde não há. Driver: AMD/Mesa, aberto e mainline — coerente com a base 10.
+**MOD-012 v4 — a hierarquia APU** *(corte do desnecessário, 22/08/2026)*: sem GPU discreta, sem soquete gráfico — **tudo é APU**. O módulo computação do celular é uma APU; a carcaça-dock carrega **sua própria APU** que soma processamento ao encaixe; e **mais docks-APU podem se encadear** quando houver trabalho de IA intensivo ou outro processamento pesado.
+
+```
+[celular: APU] ⇄ [dock/carcaça-notebook: APU] ⇄ [dock-extra: APU] ⇄ [dock-extra: APU] …
+     bolso            colo/mesa — soma                 escala sob demanda
+```
+
+**Por que o corte otimiza**:
+1. **Memória unificada em cada APU** — CPU e aceleradores partilham a mesma RAM: corta-se o maior custo energético da computação, o movimento de dados entre chips (alavanca 2 da base 14);
+2. **Uma arquitetura, uma pilha** — mesmo ISA, mesmo driver Mesa, mesmo compilador no celular e em todos os docks: a diversidade de hardware gráfico desaparece junto com sua complexidade;
+3. **Escala por adição, cada unidade adormece** — muitas APUs pequenas em ponto eficiente de tensão/frequência vencem um monolito quente em carga parcial; dock que não trabalha, não acorda (a disciplina pico/ocioso da base 13, aplicada por unidade);
+4. **Precedentes** — consoles provam que APU é gráfico sério; o Steam Deck prova APU eficiente no colo; a Tenstorrent prova que escala-por-adição é o modelo de IA da década (base 14).
+
+| ID | Requisito | Status |
+|---|---|---|
+| APU-001 | módulo computação do celular = APU de memória unificada (CPU+GPU+NPU no mesmo die) | rascunho |
+| APU-002 | todo dock contém APU própria que soma processamento quando encaixado | rascunho |
+| APU-003 | docks encadeáveis: cada APU adicional entra no pool sob demanda de trabalho | rascunho |
+| APU-004 | homogeneidade obrigatória: mesmo ISA e mesma pilha de driver em todas as unidades | rascunho |
+| APU-005 | interconexão de alta velocidade entre unidades (USB4/PCIe pela porta única, MOD-009) | rascunho |
+| APU-006 | disciplina por unidade: APU sem trabalho permanece em ocioso ≤ 10 W | rascunho |
+| APU-007 | driver integralmente aberto e mainline em todas as unidades — sem exceção | rascunho |
+
+*(Os requisitos GPU-001–007 da base 13 ficam supersededos pela hierarquia APU; o documento permanece como registro do método e da referência de eficiência.)*
 
 ## Requisitos (formato spec, para revisão do arquiteto)
 
@@ -108,7 +131,7 @@ carcaça celular (8–10 anos)
 | MOD-009 | **porta única** de alta velocidade: USB-C com USB4/DP Alt Mode/PD (vídeo, dados, energia, PCIe) — sem outras portas físicas | rascunho |
 | MOD-010 | **dock-carcaça notebook** (futuro): tela + teclado + trackpad + bateria que carrega o módulo; sem SoC próprio; sessão contínua do sistema canônico | rascunho |
 | MOD-011 | **modos mobile e desktop no mesmo dispositivo**, nativos e inclusos: sessão única que escala (UI adaptativa + janelas em tela externa); tela do aparelho permanece útil como touchpad/segunda tela durante o dock; sem produto separado, sem camada paga, sem nuvem obrigatória | rascunho |
-| MOD-012 | **v3 — sem eGPU: GPU integrada e modular nos docks** — o dock de mesa e a carcaça-notebook são eles próprios modulares e vêm com **motor GPU integrado em soquete próprio**: trocável entre gerações, alimentado e refrigerado pela própria carcaça do dock, driver aberto mainline (AMD/Mesa). O módulo computação nunca carrega gráficos pesados — a GPU mora onde há orçamento térmico | rascunho |
+| MOD-012 | **v4 — hierarquia APU** (ver seção acima; substitui soquete de GPU e eGPU): celular, docks e docks extras — todos APU homogêneas, encadeáveis sob demanda | rascunho |
 
 ---
 
