@@ -29,6 +29,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [TeiaOS: Ubuntu Phone e distros](docs/reverse-ubuntu-distros.md) | O visionário morto e as vivas: TOS-011–028, motor gráfico Mesa+Wayland, jogos, IA, integração legada, F-Droid, terminal |
 | [Convergência do ecossistema](docs/convergencia-ecossistema.md) | Cada projeto existente com papel no Teia Phone: mente, método, teia, vigília, imaginação, treino |
 | [Rede em malha: spec MAL](docs/mal-rede-em-malha.md) | Reverse spec da teia-rede: swarm, gossip, assinaturas e o teste da queda geral |
+| [Integração poder-visivel](docs/integracao-poder-visivel.md) | A vigília na teia: spec POD — pacotes pela malha e o Teia Phone docado como mirror de vizinhança |
 
 ## Diretórios de trabalho
 
