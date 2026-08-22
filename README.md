@@ -15,6 +15,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Energia em escala cósmica](docs/energia-escala-cosmica.md) | Kardashev, Dyson, Penrose, Hawking e as sete operações em escala de civilização |
 | [Camadas e dimensões de uso](docs/camadas-e-dimensoes.md) | A pilha da energia (fonte→gestão), as sete dimensões de uso e as 294 células de atuação do avatar |
 | [Cadeias e encadeamentos](docs/cadeias-e-encadeamentos.md) | Primária→final→útil, a lei da multiplicação de eficiências, cascatas e o ciclo fechado |
+| [Specs da civilização](docs/specs-civilizacao.md) | Engenharia reversa da civilização como cliente: requisitos CIV-ENE com valor, meta e verificação |
 
 ## Licenças
 
