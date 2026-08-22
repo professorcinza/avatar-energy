@@ -161,6 +161,7 @@ O marketplace de software do ecossistema no modo smartphone tem **o F-Droid como
 | ID | Requisito | Origem |
 |---|---|---|
 | TOS-027 | **marketplace conforme APL-001–007** (spec base F-Droid) no modo smartphone | decisão do arquiteto |
+| TOS-028 | **modo terminal de primeira classe, no smartphone e no desktop**: userland GNU completo (shell real, coreutils — não emulação), teclado auxiliar na tela (Ctrl/Alt/setas/tab) no modo bolso; apps TUI são cidadãos; **a mesma sessão** — shell, histórico e ambiente idênticos do bolso ao dock (convergência TOS-015 aplicada ao terminal); com teclado físico (dock ou Bluetooth), fluxo de trabalho terminal integral; **ssh cliente e servidor** — o Teia Phone administra e é administrado; apps confinados seguem confinados (TOS-012), o terminal é o modo poder do dono | decisão do arquiteto |
 
 ## A leitura energética
 
