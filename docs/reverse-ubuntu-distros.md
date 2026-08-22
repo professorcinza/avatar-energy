@@ -52,6 +52,32 @@
 | TOS-019 | pacotes assinados e builds reproduzíveis — cadeia de suprimento verificável | NixOS / GrapheneOS |
 | TOS-020 | ponte de apps Android (classe Waydroid) como requisito de sobrevivência, não opção — a lição do cemitério | o erro fatal do Ubuntu Phone |
 
+## O motor gráfico do TeiaOS (decisão, 22/08/2026)
+
+**Mesa + Wayland.** A pilha completa, de baixo para cima:
+
+```
+APU (celular / docks / cadeia)          ← APU-004: homogêneas
+  DRM/KMS          — kernel mainline: modo, memória, page-flip
+  Mesa             — O MOTOR: Vulkan/OpenGL para toda a cadeia
+  Wayland          — o protocolo de display; X11 só via XWayland
+  wlroots          — fundação de compositor: pequena, padrão, modular (TOS-014)
+  shell adaptativa — UI declarativa do bolso à mesa (TOS-016)
+```
+
+**Por que Mesa é o motor — e não "um" driver**: Mesa é a implementação aberta de Vulkan/OpenGL para **todos** os silícios da arquitetura: AMD (RADV/RadeonSI), Mali (Panfrost), Adreno (Freedreno/Turnip), Intel (ANV/Iris), renderização por software (LLPipe) e virtualização (virgl/venus). A homogeneidade da hierarquia APU (APU-004 — "mesma pilha em todas as unidades") **é literalmente o modelo Mesa**: um motor, muitos alvos, driver mainline obrigatório (APU-007).
+
+**Por que Wayland + wlroots**: convergência nativa (TOS-015) — saídas múltiplas e densidades diferentes são o caso de uso ordinário do Wayland, não um "modo"; e wlroots entrega a fundação de compositor na medida da base mínima — é a base sob Phosh, Sway e companhia, batalhada em anos de produção.
+
+**A cadeia de APUs sob esse motor**: cada unidade roda seu Mesa local — os displays são dirigidos onde o trabalho renderiza, sem streaming de pixels; e para renderização cruzada entre unidades (app no celular, GPU do dock), o caminho é o mesmo dos contêineres (TOS-012): passthrough de dispositivo, Mesa dentro, nenhum driver novo.
+
+| ID | Requisito | Origem |
+|---|---|---|
+| TOS-021 | **Mesa é o motor gráfico**: Vulkan/OpenGL para toda a cadeia; nenhum driver fora do mainline entra (APU-007) | decisão do arquiteto |
+| TOS-022 | **Wayland + wlroots**: protocolo Wayland nativo; fundação de compositor wlroots; X11 apenas via XWayland | decisão do arquiteto |
+
+*A escolha da shell adaptativa sobre o wlroots (Phosh-classe, Lomiri-classe, ou própria) fica para o arquiteto — a fundação abaixo dela está decidida.*
+
 ## A leitura energética
 
 Cada parâmetro tem dimensão energética: base mínima = menos código em execução permanente; imutável = sistema sem *drift*, sem reinstalação de resgate; atualização atômica = **nenhum sistema quebrado pela metade** (a reinstalação é o maior desperdício de software); rollback = anti-desperdício institucionalizado. E a ponte Android (TOS-020) é o que impede o desperdício supremo: **um sistema perfeito que ninguém usa por falta de apps**.
