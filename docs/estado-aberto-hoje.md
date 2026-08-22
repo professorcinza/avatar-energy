@@ -56,6 +56,18 @@ A carcaça aberta deixou de ser idealismo: **é lei em transformação**.
 - **Moderna** (2022): patentes COVID não aplicadas durante a pandemia;
 - **Este ecossistema** — a [Política de Invenção Aberta](https://github.com/professorcinza/ponte-brasil-china/blob/main/docs/open-invention-policy/pt.md) do hub: prior art público, sem patentes, sem exclusividade. O MOD-003 (conector livre de royalties) não nasce sozinho — nasce numa tradição.
 
+## 5.5 · Seleção de GPU aberta para o soquete do MOD (ago/2026)
+
+| Papel | Escolha | Números |
+|---|---|---|
+| **Referência do soquete** | AMD RX 9070 (RDNA4) | ~164 GFLOPS/W FP32 · 220 W · 16 GB · ~US$ 549 · Mesa day-one |
+| Entrada (dock econômico) | Intel Arc B580 | ~72 GFLOPS/W · 190 W · US$ 229–290 · stack aberto jovem |
+| Curinga 2026 | Intel Arc B770 (BMG-G31) | 32 Xe2 · 16 GB · ~300 W · ~US$ 449–499 |
+
+Exclusões: NVIDIA (userspace fechado — falha no critério aberto); GPUs de silício aberto (VortexGPU e afins — pesquisa, ordens de magnitude atrás). O soquete (MOD-012 v3) é agnóstico: a referência orienta, não restringe.
+
+---
+
 ## 6 · O BOM do MOD com o que existe HOJE
 
 | Módulo | Solução hoje | Estado |
