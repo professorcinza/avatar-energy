@@ -58,6 +58,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Nó de Malha MOD](docs/no-malha-mod.md) | MN-001..024: o primeiro produto MOD além do Teia Phone — a infraestrutura física da teia, autoalimentada por luz, ≤ US$ 50 |
 | [Geladeira MOD](docs/geladeira-mod.md) | REF-001..024: conservação em módulos — carcaça VIP 15 anos, compressor inverter girável, ≤ 200 kWh/ano, ≤ US$ 400 |
 | [Engenharia reversa: vídeo IA](docs/reverse-video-ia.md) | Todos os modelos (fechados + abertos): Seedance, Kling, Sora, Veo, Wan, Hunyuan, MiniMax H3 — o mapa geopolítico e o que cabe na APU |
+| [Teia Engine](docs/teia-engine.md) | TE-001..022: a IA generativa de games — world model interativo que gera mundo+narrativa+persistence em tempo real, localmente |
 | [Casa Remota](docs/casa-remota.md) | INF-001..011: a casa da equipe no Mac mini 2012 dedicado — túnel sem portas, sandbox fora, mirror diário, custo ≤ US$ 20/mês |
 
 ## Versão oficial em PDF
