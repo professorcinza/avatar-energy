@@ -20,9 +20,9 @@
 
 | Domínio proposto | IDs | O que cobre |
 |---|---|---|
-| **AVA — o avatar** | AVA-001+ | o nome do projeto sem specs próprias: precisão de medição (classes de erro, ex. ±1%), latência de decisão, contabilização de si mesmo, privacidade dos dados de energia (quem mede o medidor) |
-| **MAL — rede em malha** | MAL-001+ | offline-first: par-a-par entre Teia Phones (Wi-Fi Direct, BT), descoberta, roteamento em teia, LoRa como módulo futuro |
-| **MEC — mecânica e térmica** | MEC-001+ | trilhos e travas do MOD, tolerâncias, dimensões do conector, resistência a queda, alvo de IP, envelopes térmicos por módulo, temperatura máxima de superfície |
+| **AVA — o avatar** 🔴 | AVA-001+ | o nome do projeto sem specs próprias: precisão de medição (classes de erro, ex. ±1%), latência de decisão, contabilização de si mesmo, privacidade dos dados de energia (quem mede o medidor) |
+| **MAL — rede em malha** 🔴 | MAL-001+ | offline-first: par-a-par entre Teia Phones (Wi-Fi Direct, BT), descoberta, roteamento em teia, LoRa como módulo futuro |
+| **MEC — mecânica e térmica** 🟡 | MEC-001+ (parcial: MOD-018/019 cobrem durabilidade militar; faltam tolerâncias, envelopes térmicos e alvo de IP) | trilhos e travas do MOD, tolerâncias, dimensões do conector, resistência a queda, alvo de IP, envelopes térmicos por módulo, temperatura máxima de superfície |
 | **SEG — segurança e regulatório** | SEG-001+ | bateria (UN 38.3, IEC 62133), SAR, elétrica; roteiro ANATEL/FCC/CE/RoHS do modem EXC-001 |
 | **IHU — interface humana** | IHU-001+ | tela (brilho, legibilidade ao sol), áudio, sensores, câmera (alvos, ISP), acessibilidade (o princípio de uma mão elevado a lei de UI) |
 | **APL — aplicativos e loja** | APL-001+ | repositório de apps (Flatpak-class), assinatura, UI de permissões, SDK que desenvolvedores visam — sem devs não há ecossistema |
@@ -30,6 +30,15 @@
 | **ACS — atualização** | ACS-001+ | como OTA chega: manifest assinado, servidor ou P2P, canário e rollback em campo |
 | **GOV — fundação** | GOV-001+ | estatuto da fundação neutra (SYS-006), financiamento, direitos de decisão, sucessão — a instituição que sobrevive às pessoas |
 | **INT-i18n** | — | localização: PT/EN/ZH mínimos em tudo (a ponte fala três línguas) |
+
+## 1.5 · Gaps descobertos após MOD-015–019
+
+| Domínio | Gap |
+|---|---|
+| **ANT — antenas** 🔴 | antenas num chassi modular que encaixa em docks metálicos: WiFi/BT/GPS/modem precisam de spec própria (o encaixe não pode matar o sinal) |
+| **FRI — refrigeração** 🟡 | envelopes térmicos dos docks com APU (a GPU-004 morreu superseded; o dock esquentou sem spec) |
+| **RIG — bancada** 🔴 | specs prometem 'verificado por medição' — falta a spec da bancada que mede (instrumentos, método, calibração) |
+| **FMT — formato de spec-repo** 🟡 | a esteira EST exige repositórios de spec validáveis: falta o formato padrão (a gramática que o lint da EST-002 aceita) |
 
 ## 2 · Ordem sugerida
 
