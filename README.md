@@ -12,6 +12,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 |---|---|
 | [Conceito](docs/conceito.md) | As sete operações, o ciclo da energia e o papel do avatar |
 | [Fundamentos da energia](docs/energia-fundamentos.md) | Definição, formas, fontes, vetores e fronteira |
+| [Energia em escala cósmica](docs/energia-escala-cosmica.md) | Kardashev, Dyson, Penrose, Hawking e as sete operações em escala de civilização |
 
 ## Licenças
 
