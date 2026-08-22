@@ -52,6 +52,12 @@ The answer is one house, always up: the bots live on the **dedicated mini** (arc
 └──────────────────┘   └──────────────────┘
 ```
 
+## Exceptions (registry, not tolerance)
+
+| ID | Exception | Justification (dated) | Exit trigger |
+|---|---|---|---|
+| **EXC-INF-001** | **Interim house on the architect's work MacBook** — the house stack runs on this machine, not the mini | 2026-08-22: the mini awaits Linux installation; the interim house unblocks team validation (tunnel, allowlist, routines, credentials) without waiting for the final hardware. Rules fully kept: tunnel-only (INF-005), credential divorce (INF-009b — the stack never touches personal gh), daily mirror (INF-006). Relaxed and declared rule: **opportunistic availability** — the house follows the MacBook's life (sleep, lid, movement take it down; it returns on wake) | **Mini provisioning**: house restored from the mirror onto the mini with health OK — the migration is the real rehearsal of INF-006's restore; exception closed in the same commit |
+
 ## What this base is not
 
 - Not the bridge to "Rakazo Cloud" (it does not exist); it is self-hosting of the open code

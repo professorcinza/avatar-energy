@@ -51,6 +51,12 @@ A resposta é uma casa só, sempre de pé: os bots vivem no **mini dedicado** (r
 └──────────────────┘   └──────────────────┘
 ```
 
+## Exceções (registro, não tolerância)
+
+| ID | Exceção | Justificativa (datada) | Gatilho de saída |
+|---|---|---|---|
+| **EXC-INF-001** | **Casa interina no MacBook de trabalho do arquiteto** — o stack da casa roda nesta máquina, não no mini | 22/08/2026: o mini aguarda instalação do Linux; a casa interina destrava a validação de equipe (túnel, allowlist, rotinas, credenciais) sem esperar o hardware final. Regras mantidas integralmente: túnel-only (INF-005), divórcio de credenciais (INF-009b — o stack nunca toca o gh pessoal), mirror diário (INF-006). Regra relaxada e declarada: **disponibilidade oportunista** — a casa segue a vida do MacBook (sono, tampa, deslocamento derrubam; religa ao acordar) | **Provisionamento do mini**: casa restaurada do mirror no mini com health OK — a migração é o ensaio real de restauração do INF-006; exceção fechada no mesmo commit |
+
 ## O que não é esta base
 
 - Não é a ponte para "Rakazo Cloud" (não existe); é auto-hospedagem do código aberto
