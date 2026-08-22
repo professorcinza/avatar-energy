@@ -53,6 +53,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Matriz energética nacional](docs/matriz-nacional.md) | Prós e contras de cada fonte, a matriz-modelo ~2050 e os casos Brasil × China — trilíngue por concepção |
 | [O indispensável](docs/indispensavel.md) | Da hidrelétrica para baixo: vereditos peça a peça e a síntese — funções (firmar, transportar, alocar), não fontes |
 | [Engenharia reversa: solar](docs/reverse-solar.md) | Quatro frentes medidas: tandem 35,5%, invisível 12,3%, orgânica >21%, indoor 38% — e onde cada uma entra no MOD |
+| [Engenharia reversa: eólica](docs/reverse-eolica.md) | Turbinas 26 MW, flutuante 94,6 MW operacional, páss reciclável e as 6 práticas de adoção — com o caso Brasil |
 
 ## Versão oficial em PDF
 

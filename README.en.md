@@ -40,6 +40,7 @@ A project of the [ponte-brasil-china](https://github.com/professorcinza/ponte-br
 | [National energy matrix](docs/matriz-nacional.en.md) | Pros and cons per source, the ~2050 model matrix and the Brazil × China cases — trilingual by conception |
 | [The indispensable](docs/indispensavel.en.md) | From hydro downward: piece-by-piece verdicts and the synthesis — functions (firm, transport, allocate), not sources |
 | [Reverse engineering: solar](docs/reverse-solar.en.md) | Four fronts measured: tandem 35.5%, transparent 12.3%, organic >21%, indoor 38% — and where each enters the MOD |
+| [Reverse engineering: wind](docs/reverse-eolica.en.md) | 26 MW turbines, 94.6 MW floating operational, recyclable blades and 6 adoption practices — with Brazil's case |
 
 ## Working directories
 
