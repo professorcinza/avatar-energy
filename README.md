@@ -43,6 +43,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | Artefato | Conteúdo |
 |---|---|
 | [Especificações Completas v1.0.0](docs/pdf/avatar-energy-especificacoes-v1.0.0.pdf) | Compêndio de 74 páginas: capa, licença CC BY-SA 4.0 explícita, créditos, sumário e os 30 documentos — gerado da árvore oficial e versionado por tag |
+| [完整规格 v1.0.0 (ZH)](docs/pdf/avatar-energy-specifications-v1.0.0-zh.pdf) | Edição chinesa: 62 páginas, pandoc+WeasyPrint, mesmas licença e autoria |
 
 ## Diretórios de trabalho
 

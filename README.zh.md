@@ -44,6 +44,12 @@
 | [docs/software/](docs/software/) | 代理即代码：循环、S1–S3 决策、规格卡 |
 | [规格积压](docs/spec-backlog.md) | 元工作与领域——全部已规格化 |
 
+## 官方 PDF 版本
+
+| 版本 | 内容 |
+|---|---|
+| [完整规格 v1.0.0](docs/pdf/avatar-energy-specifications-v1.0.0-zh.pdf) | 62 页：封面、显式 CC BY-SA 4.0 许可、署名（Cleiton Moura Loura）、目录与全部 25 篇基础文档 |
+
 ## 许可
 
 - **代码**：GNU AGPL 3.0 或更高版本
