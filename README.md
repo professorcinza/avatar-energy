@@ -32,6 +32,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Integração poder-visivel](docs/integracao-poder-visivel.md) | A vigília na teia: spec POD — pacotes pela malha e o Teia Phone docado como mirror de vizinhança |
 | [Integração teia-kernel](docs/integracao-teia-kernel.md) | A mente local: spec KER — análise offline, dossiês para a vigília e o perfil ZH como primeira contribuição |
 | [Integrações de conteúdo](docs/integracoes-conteudo.md) | Imaginação e treino: spec INK (mundos-contratos que obedecem à bateria) e CIVG (o jogo como prova SDD e simulador CIV) |
+| [Contorno de hardware](docs/contorno-hardware.md) | Antenas, térmica, bancada e regulatório — com o trunfo da certificação por módulo |
 
 ## Diretórios de trabalho
 
