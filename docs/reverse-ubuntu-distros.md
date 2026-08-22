@@ -121,6 +121,26 @@ APU (celular / docks / cadeia)          ← APU-004: homogêneas
 |---|---|---|
 | TOS-024 | **100% do software de IA atual aceito, localmente**: runtimes universais (GGUF-classe), Vulkan como backend neutro, ROCm onde houver, Box64 para binários x86, memória unificada como VRAM e cadeia de APUs para modelos maiores que uma unidade | decisão do arquiteto |
 
+## Layer de integração com sistemas legados: Windows, macOS, Android (decisão, 22/08/2026)
+
+O TeiaOS integra-se com os sistemas herdados em três círculos — **rodar o software deles, conversar com os dispositivos deles, receber os usuários deles** — e uma fronteira honesta.
+
+| ID | Camada | Tecnologia | Estado |
+|---|---|---|---|
+| INT-1 | **Software Windows** (aplicativos em geral) | Wine + Proton (herdado da TOS-023, estendido além de jogos) + Box64 para ISA | camadas mainline da cena |
+| INT-2 | **Apps Android** | Waydroid em contêiner confinado (TOS-020) — a ponte de sobrevivência | já especificado |
+| INT-3 | **Protocolos de rede e periféricos** | Samba (SMB), mDNS/Avahi, CUPS para impressoras, MTP para transferência | pilha nativa Linux, madura |
+| INT-4 | **Dispositivo-a-dispositivo** | protocolo classe KDE Connect (aberto): clipboard, notificações, arquivos e entrada remota entre Teia Phone e máquinas Windows/macOS | âncora viva, contribuição-first |
+| INT-5 | **Migração de dados** (a ponte de adoção) | importação única de contatos, arquivos, mensagens e configurações vindas de Android, iOS, Windows, macOS | frente própria do ecossistema |
+| INT-6 | **Software macOS** | **a fronteira honesta**: sem camada binária viável (o projeto Darling permanece experimental) — integração por documento e protocolo apenas | fronteira registrada |
+| INT-7 | **Documentos** | formatos abertos como nativos (ODF, PDF); formatos legados por conversores — nunca como formato de guarda | política |
+
+**A leitura de adoção**: INT-5 é o mais estratégico dos sete — a migração de entrada é o que decide se o sistema ganha habitantes; tudo o mais decide se eles ficam. E a regra de formatos abertos (INT-7) é o anti-cativeiro: o usuário chega do legado, mas nunca volta a ser refém.
+
+| ID | Requisito | Origem |
+|---|---|---|
+| TOS-025 | **layer de integração legada**: rodar (INT-1/2), conversar (INT-3/4) e receber (INT-5) — com fronteira binária do macOS registrada (INT-6) e formatos abertos como nativos (INT-7) | decisão do arquiteto |
+
 ## A leitura energética
 
 Cada parâmetro tem dimensão energética: base mínima = menos código em execução permanente; imutável = sistema sem *drift*, sem reinstalação de resgate; atualização atômica = **nenhum sistema quebrado pela metade** (a reinstalação é o maior desperdício de software); rollback = anti-desperdício institucionalizado. E a ponte Android (TOS-020) é o que impede o desperdício supremo: **um sistema perfeito que ninguém usa por falta de apps**.
