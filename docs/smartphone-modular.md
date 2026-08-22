@@ -73,6 +73,24 @@ Decisão do arquiteto (22/08/2026): o MOD adota o padrão de uso com uma mão �
 
 **Leitura energética**: tela é o maior consumo em execução; ~5,4" contra ~6,8" correntes ≈ **~40% menos área iluminada** — o formato pequeno corta o elo dominante do consumo em uso, e a carcaça menor reduz a energia incorporada do chassi que nunca se troca.
 
+## Convergência: uma porta, muitas carcaças
+
+Decisão do arquiteto (22/08/2026): o MOD terá **uma única entrada de alta velocidade**, abrindo espaço a adaptadores e docks externos (estilo ThinkPad) — incluindo, no futuro, um **dock-carcaça estilo MacBook**: encaixa-se o smartphone e ele vira um notebook.
+
+**Precedentes que provam o caminho**: Motorola Atrix (2011) fez o primeiro laptop-dock; Samsung DeX mostrou o desktop; Nintendo Switch e Steam Deck normalizaram o encaixe; lapdocks já são o brinquedo favorito da comunidade Fairphone. O que faltava era o software — e o **sistema canônico** (base 12) entrega de graça: uma sessão Linux real escala de 5" para 27" sem "modo desktop" artificial.
+
+**A hierarquia da longevidade completa-se**:
+
+```
+carcaça celular (8–10 anos)
+   └── módulo computação (4–6 anos)  ←── o girante supremo
+         ├── carcaça bolso   (telas/touch, troca por dano)
+         ├── dock mesa       (monitor+teclado+energia)
+         └── dock carcaça notebook (tela+teclado+bateria)  ← futura
+```
+
+**A leitura energética**: o dock-notebook é uma carcaça **sem cérebro** — sem SoC, sem RAM, sem armazenamento: ~40–60% da energia incorporada de um notebook, e como carcaça que é, **vive 10+ anos atravessando gerações de módulo**. Quem tem celular + dock abre mão do segundo computador inteiro: uma aritmética de ~1 computador menos por pessoa, por década — a mesma economia da base 09 aplicada na escala de cima. E a bateria do dock devolve: carrega o celular enquanto encaixado (PD bidirecional).
+
 ## Requisitos (formato spec, para revisão do arquiteto)
 
 | ID | Requisito | Status |
@@ -85,6 +103,8 @@ Decisão do arquiteto (22/08/2026): o MOD adota o padrão de uso com uma mão �
 | MOD-006 | energia incorporada por ano de serviço ≤ 50% do integrado | rascunho |
 | MOD-007 | **v2** — sem distribuições: o alvo único é o sistema canônico (base 12); a comunidade contribui ao mainline | rascunho |
 | MOD-008 | fator de forma uma mão: largura ≤ 68 mm, tela 4,7–5,4", altura ≤ 145 mm, peso ≤ 160 g, espessura ≤ 10 mm | rascunho |
+| MOD-009 | **porta única** de alta velocidade: USB-C com USB4/DP Alt Mode/PD (vídeo, dados, energia, PCIe) — sem outras portas físicas | rascunho |
+| MOD-010 | **dock-carcaça notebook** (futuro): tela + teclado + trackpad + bateria que carrega o módulo; sem SoC próprio; sessão contínua do sistema canônico | rascunho |
 
 ---
 
