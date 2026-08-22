@@ -20,7 +20,7 @@
 
 | Domínio proposto | IDs | O que cobre |
 |---|---|---|
-| **AVA — o avatar** 🔴 | AVA-001+ | o nome do projeto sem specs próprias: precisão de medição (classes de erro, ex. ±1%), latência de decisão, contabilização de si mesmo, privacidade dos dados de energia (quem mede o medidor) |
+| **AVA — o avatar** 🟡 | AVA-001..018 | (spec rascunho completa em docs/software/avatar-spec.md — aguarda revisão do arquiteto e decisão S3) | o nome do projeto sem specs próprias: precisão de medição (classes de erro, ex. ±1%), latência de decisão, contabilização de si mesmo, privacidade dos dados de energia (quem mede o medidor) |
 | **MAL — rede em malha** ✅ | MAL-001..008 | (spec destilada da teia-rede — base 18; implementação MAL-007 segue as fichas de software) | offline-first: par-a-par entre Teia Phones (Wi-Fi Direct, BT), descoberta, roteamento em teia, LoRa como módulo futuro |
 | **MEC — mecânica e térmica** 🟡 | MEC-001+ (parcial: MOD-018/019 cobrem durabilidade militar; faltam tolerâncias, envelopes térmicos e alvo de IP) | trilhos e travas do MOD, tolerâncias, dimensões do conector, resistência a queda, alvo de IP, envelopes térmicos por módulo, temperatura máxima de superfície |
 | **SEG — segurança e regulatório** | SEG-001+ | bateria (UN 38.3, IEC 62133), SAR, elétrica; roteiro ANATEL/FCC/CE/RoHS do modem EXC-001 |
