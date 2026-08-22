@@ -86,7 +86,8 @@ carcaça celular (8–10 anos)
    └── módulo computação (4–6 anos)  ←── o girante supremo
          ├── carcaça bolso   (telas/touch, troca por dano)
          ├── dock mesa       (monitor+teclado+energia)
-         └── dock carcaça notebook (tela+teclado+bateria)  ← futura
+         ├── dock carcaça notebook (tela+teclado+bateria)
+         └── carcaça jogo    (gamepad: o celular vira portátil estilo PSP)
 ```
 
 **A leitura energética**: o dock-notebook é uma carcaça **sem cérebro** — sem SoC, sem RAM, sem armazenamento: ~40–60% da energia incorporada de um notebook, e como carcaça que é, **vive 10+ anos atravessando gerações de módulo**. Quem tem celular + dock abre mão do segundo computador inteiro: uma aritmética de ~1 computador menos por pessoa, por década — a mesma economia da base 09 aplicada na escala de cima. E a bateria do dock devolve: carrega o celular enquanto encaixado (PD bidirecional).
@@ -132,6 +133,7 @@ carcaça celular (8–10 anos)
 | MOD-010 | **dock-carcaça notebook** (futuro): tela + teclado + trackpad + bateria que carrega o módulo; sem SoC próprio; sessão contínua do sistema canônico | rascunho |
 | MOD-011 | **modos mobile e desktop no mesmo dispositivo**, nativos e inclusos: sessão única que escala (UI adaptativa + janelas em tela externa); tela do aparelho permanece útil como touchpad/segunda tela durante o dock; sem produto separado, sem camada paga, sem nuvem obrigatória | rascunho |
 | MOD-012 | **v4 — hierarquia APU** (ver seção acima; substitui soquete de GPU e eGPU): celular, docks e docks extras — todos APU homogêneas, encadeáveis sob demanda | rascunho |
+| MOD-013 | **carcaça-jogo (gamepad)**: o smartphone encaixa em paisagem e vira portátil estilo PSP — dual sticks, D-pad, botões, gatilhos, vibração, bateria que carrega o módulo; entrada como HID padrão (evdev/SDL, mainline); variante com APU própria que entra na hierarquia MOD-012 v4 para jogos exigentes | rascunho |
 
 ---
 
