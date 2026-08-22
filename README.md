@@ -18,6 +18,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Specs da civilização](docs/specs-civilizacao.md) | Engenharia reversa da civilização como cliente: requisitos CIV-ENE com valor, meta e verificação |
 | [Engenharia reversa: smartphone custo-efetivo](docs/reverse-smartphone.md) | Moto G Power 2026 sob a lente de energia: 20 Wh, 420 mW médios e a economia do armazenamento |
 | [Veredito: universalização do Android](docs/veredito-universalizacao.md) | SIM, por ~10:1 — a aritmética de ciclo de vida que decide fragmentação × universalização |
+| [A fronteira](docs/fronteira.md) | O cutting edge por camada: fusão, sódio-ion, ferro-ar, Landauer — com data, estado e fonte |
 
 ## Licenças
 
