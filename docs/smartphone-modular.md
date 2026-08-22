@@ -138,6 +138,7 @@ carcaça celular (8–10 anos)
 | MOD-013 | **carcaça-jogo (gamepad)**: o smartphone encaixa em paisagem e vira portátil estilo PSP — dual sticks, D-pad, botões, gatilhos, vibração, bateria que carrega o módulo; entrada como HID padrão (evdev/SDL, mainline); variante com APU própria que entra na hierarquia MOD-012 v4 para jogos exigentes | rascunho |
 | MOD-014 | **abertura total com exceções raras**: toda peça que compõe o dispositivo tem arquitetura aberta (esquemas, documentação, driver mainline); exceção exige registro EXC com justificativa e plano de substituição | rascunho |
 | MOD-015 | **sem storage interno**: o armazenamento é microSD externo — slot **microSD Express (NVMe sobre PCIe)**, bootável, trocável a quente com o sistema parado. O cartão carrega SO + dados, criptografados de ponta a ponta (TOS-001); sem cartão, a carcaça é casca vazia. O storage vira módulo de verdade: cresce, troca-se e migra entre carcaças | rascunho |
+| MOD-016 | **SIM externo de fácil troca**: slot nano-SIM acessível pela borda, sem ferramenta e sem desmontar módulo algum, com troca a quente suportada (o modem reassocia sem reboot); mínimo 1× nano-SIM, 2× desejável; **SIM físico é o caminho primário — eSIM no máximo como secundário opcional, nunca o único**: a identidade de rede pertence ao usuário, não à operadora; lock de operadora é violação de spec | rascunho |
 
 ---
 
