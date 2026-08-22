@@ -58,7 +58,7 @@ MEDIÇÃO ──► DECISÃO ──► ATUAÇÃO ──► MEDIÇÃO
 
 | ID | Requisito | Deriva de |
 |---|---|---|
-| AVA-018 | **inteligência plugável, interface única**: piso = regras e otimização clássica (sempre presente); teto opcional = IA local (pipeline dialético do kernel, KER-004) — a decisão S3 escolhe o motor; a interface do laço é uma só, e não muda | S3 + KER-004 |
+| AVA-018 | **inteligência local-first, interface única**: piso = regras e otimização clássica (sempre presente, determinística, auditável); teto = IA local (pipeline dialético do kernel, KER-004) inferindo na própria cadeia de APUs — se o hardware não sustenta o teto, espera-se o hardware (lógica D1 aplicada à inteligência). **Sem degrau remoto**: nenhuma inferência sai do aparelho, nem como opção. A decisão S3 (22/08/2026) escolheu os motores; a interface do laço é uma só, e não muda | S3 + KER-004 |
 
 ---
 

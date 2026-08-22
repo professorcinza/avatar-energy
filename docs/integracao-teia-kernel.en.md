@@ -17,7 +17,7 @@ TEIA's analytical constitution: orchestrator system prompt (v22.0), 5-phase PET 
 | KER-001 | **the mind runs locally**: the kernel's system prompts operate via llama.cpp (TOS-024) as the device's analytical assistant — the investigation never leaves the Teia Phone | ECO-001 |
 | KER-002 | **norm-II Python** (AI exception): the package runs entirely on the device through the first-class terminal (TOS-028) | norm II |
 | KER-003 | **outputs in open formats** (INT-7) and the dossiers generated feed poder-visivel (`dossier-seed`) — the mind writing for the vigil | project connection |
-| KER-004 | the kernel's **dialectical pipeline** is a declared candidate for the avatar's intelligence (decision S3, pending the architect) — the mind that could become the avatar itself | S3 |
+| KER-004 | the kernel's **dialectical pipeline** is the declared tactical engine of the avatar's intelligence under decision S3 (2026-08-22: **absolute local-first** — rules as the floor, local AI as the ceiling, no remote tier; missing hardware is waited for) — the mind that could become the avatar itself | S3 |
 | KER-005 | **nation profiles: BR and US existed — the ZH (China) profile enters as the ecosystem's first contribution to its anchor** (norm III): the Brazil–China bridge turned code — Chinese laws, official sources and institutions in the analytical registry | contribution |
 | KER-006 | **the kernel is a living anchor**: it evolves in its repository; the Teia Phone consumes signed releases (ACS), never forks | norm III |
 | KER-007 | **the mind is optional and local by architecture**: no cloud analysis, no telemetry — privacy by construction, not by policy | TOS-024 |

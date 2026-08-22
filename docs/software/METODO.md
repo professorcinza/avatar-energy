@@ -45,7 +45,7 @@ Mais os dois produtos-algoritmo já previstos: **orquestrador da cadeia de APUs*
 |---|---|---|
 | S1 | **Onde o avatar vive** | (a) daemon em espaço de usuário sobre interfaces mainline (sem tocar no kernel — o caminho SYS-coerente); (b) módulos de kernel (exige mainline upstream, ciclo lento) |
 | S2 | **Linguagem** | **DECIDIDA (22/08/2026): RUST** — linguagem oficial do ecossistema (norma no hub), com exceções registradas: C para upstream C, Python para ferramentaria de IA |
-| S3 | **Inteligência local** | o avatar decide por regras/otimização clássica, ou por IA local inferindo na própria cadeia de APUs (a ferramenta comendo o próprio rabo energético) |
+| S3 | **Inteligência local** | **DECIDIDA (22/08/2026): local-first absoluto.** Piso: regras/otimização clássica — sempre presente, determinística, auditável. Teto: IA local (pipeline dialético, KER-004) inferindo na própria cadeia de APUs — se o hardware ainda não sustenta o teto, espera-se o hardware (lógica D1 aplicada à inteligência). **Sem degrau remoto**: IA remota não existe no produto — nem como opção |
 
 ## Fichas a abrir
 

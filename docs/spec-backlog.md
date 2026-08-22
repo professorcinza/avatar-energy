@@ -42,7 +42,7 @@
 
 ## Todos os domínios do backlog estão especificados ✅
 
-Restam apenas os itens do arquiteto: **M-1** (passagem de revisão — mover specs de rascunho→revisado), **S1** (onde o avatar vive) e **S3** (a inteligência do avatar).
+Restam apenas os itens do arquiteto: **M-1** (passagem de revisão — mover specs de rascunho→revisado) e **S1** (onde o avatar vive). **S3 decidida (22/08/2026): local-first absoluto — regras como piso, IA local (KER-004) como teto, sem degrau remoto.**
 
 ## 2 · Ordem sugerida
 
