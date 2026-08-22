@@ -37,6 +37,7 @@ A project of the [ponte-brasil-china](https://github.com/professorcinza/ponte-br
 | [Governance and meta](docs/governanca-e-meta.md) | GOV (the foundation that outlives people), i18n, FMT (the pipeline grammar) *(PT)* |
 | [The Second Moon](docs/segunda-lua.en.md) | Earth as deliberate reflector: precedents (Znamya, Chengdu), redirect in purity — exploratory |
 | [Industrial waste](docs/desperdicio-industrial.en.md) | The arithmetic of the disposable: two vectors, the business root (Phoebus→HAGE), the counter-specs |
+| [National energy matrix](docs/matriz-nacional.en.md) | Pros and cons per source, the ~2050 model matrix and the Brazil × China cases — trilingual by conception |
 
 ## Working directories
 

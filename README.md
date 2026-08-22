@@ -50,6 +50,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Governança e meta](docs/governanca-e-meta.md) | GOV (a fundação que sobrevive às pessoas), i18n (PT·EN·ZH) e FMT (a gramática da esteira) |
 | [A Segunda Lua](docs/segunda-lua.md) | A Terra como refletor deliberado: precedentes (Znamya, Chengdu), a operação redirecionar em pureza e as três honestidades — base exploratória |
 | [O desperdício industrial](docs/desperdicio-industrial.md) | A aritmética do descartável: os dois vetores, a raiz de negócio (Phoebus a HAGE) e a contraproposta spec por spec |
+| [Matriz energética nacional](docs/matriz-nacional.md) | Prós e contras de cada fonte, a matriz-modelo ~2050 e os casos Brasil × China — trilíngue por concepção |
 
 ## Versão oficial em PDF
 
