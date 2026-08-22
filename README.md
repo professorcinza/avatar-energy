@@ -2,6 +2,8 @@
 
 **O agente da energia.**
 
+**Idiomas:** [Português](README.md) · [English](README.en.md) · [中文](README.zh.md)
+
 A função deste projeto é **maximizar, redirecionar, alocar, conservar, armazenar, distribuir e minimizar desperdício de energia** — as sete operações que cobrem o ciclo completo da energia, da fonte ao uso.
 
 Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/ponte-brasil-china), regido pelo Artigo 6 da [Carta de Colaboração](https://github.com/professorcinza/ponte-brasil-china/blob/main/docs/open-collaboration-charter/pt.md).
