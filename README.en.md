@@ -44,7 +44,7 @@ A project of the [ponte-brasil-china](https://github.com/professorcinza/ponte-br
 | [The nuclear problems](docs/problemas-nuclear.en.md) | The 13 groups: categorical, economic and temporal — the house's reference for any nuclear debate |
 | [MOD Mesh Node](docs/no-malha-mod.en.md) | MN-001..024: first MOD product beyond the Teia Phone — the web's physical infrastructure, self-powered by light, ≤ $50 |
 | [MOD Refrigerator](docs/geladeira-mod.en.md) | REF-001..024: conservation in modules — 15-yr VIP chassis, rotating inverter compressor, ≤ 200 kWh/yr, ≤ $400 |
-| [Remote House](docs/casa-remota.en.md) | INF-001..009b: the team's rakazo instance — remote always-on, sandbox outside, credentials in the house, cost ≤ US$ 20/mo |
+| [Remote House](docs/casa-remota.en.md) | INF-001..011: the team's house on the dedicated Mac mini 2012 — tunnel no ports, sandbox outside, daily mirror, cost ≤ US$ 20/mo |
 
 ## Working directories
 

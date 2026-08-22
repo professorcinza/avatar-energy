@@ -2,51 +2,53 @@
 
 **Avatar-Energy · Base 34 · 22 de agosto de 2026**
 
-*Decisão do arquiteto (22/08/2026): a pipeline de desenvolvimento da equipe roda numa instância remota always-on do rakazo, auto-hospedada. Esta base especifica o desenho antes da infraestrutura — o Portão antes do centavo.*
+*Decisão do arquiteto (22/08/2026, revista na mesma data): a pipeline de desenvolvimento da equipe roda numa instância self-hosted always-on do rakazo — o **Mac mini 2012 dedicado do arquiteto**, na ethernet, com mirror diário fora da casa. Esta base especifica o desenho antes da infraestrutura — o Portão antes do centavo.*
 
 ---
 
 ## O problema
 
-A equipe precisa conversar com bots persistentes 24/7. A alternativa — rodar o stack na máquina do arquiteto — falha por três motivos verificados: (1) a máquina dorme, e rotinas não disparam; (2) expor a máquina do arquiteto à Internet expõe também suas credenciais GitHub com poder de push em 8 repositórios; (3) o rakazo é beta (nasceu 13/08/2026) e o produto hosted "Rakazo Cloud" não existe — "migrar local↔remoto quando conveniente" não é operação suportada pelo projeto.
+A equipe precisa conversar com bots persistentes 24/7. Rodar o stack na **máquina de trabalho** do arquiteto falha por três motivos verificados: (1) a máquina dorme, e rotinas não disparam; (2) expô-la à Internet expõe também as credenciais GitHub do arquiteto com poder de push em 8 repositórios; (3) o rakazo é beta (nasceu 13/08/2026) e o produto hosted "Rakazo Cloud" não existe — "migrar local↔remoto quando conveniente" não é operação suportada pelo projeto.
 
-A resposta é uma casa só, sempre remota: os bots vivem na nuvem; a máquina do arquiteto é cliente.
+A resposta é uma casa só, sempre de pé: os bots vivem no **mini dedicado** (residência do arquiteto, ethernet, sempre ligado), exposto à equipe por túnel cifrado **sem portas abertas**; a máquina de trabalho do arquiteto permanece cliente. A nuvem alugada (Hetzner/Fly) fica como plano B registrado — o mini é o plano A por custo zero de aluguel e pela tese da casa em pessoa: **um aparelho de 2012 servindo em 2026 é o MOD-001 provado em casa**. O risco declarado e aceito pelo arquiteto: queda de energia longa derruba a casa até a luz voltar — o mirror diário cobre perda de dados, não disponibilidade.
 
 ## A spec INF
 
 | ID | Requisito | Origem |
-|---|---|---| 
-| INF-001 | **uma casa só**: uma única instância rakazo, sempre remota e always-on; sem instância local paralela de equipe — a máquina do arquiteto é cliente (browser + Hermes local para trabalho direto no terminal) | decisão |
-| INF-002 | **tamanho honesto**: VM 2 vCPU / 2–4 GB RAM / ≥ 20 GB disco (o doc oficial: 2 GB basta para API+worker+Postgres; Docker local de sandbox fica fora — provedores E2B/Daytona assumem os computadores dos bots) | self-host.md |
-| INF-003 | **sandbox fora da casa**: computadores dos bots em provedor dedicado (E2B ou Daytona) — a VM roda só API/worker/Postgres; execução isolada, destrutível, nunca na VM da aplicação | self-host.md |
-| INF-003b | **credenciais de modelo ficam na casa**: chaves de LLM cifradas no Postgres da VM sob a ENCRYPTION_KEY da instância; exportação por padrão: **nunca** — mesma lei do AVA-006 | AVA-006 |
+|---|---|---|
+| INF-001 | **uma casa só** (v2): o Mac mini 2012 dedicado, sempre ligado, ethernet — nunca a máquina de trabalho do arquiteto; a máquina de trabalho é cliente (browser + Hermes local para terminal próprio) | decisão |
+| INF-002 | **tamanho honesto** (v2): o mini substitui a VM alugada (excede o piso de 2 GB do doc oficial); a sandbox dos bots permanece fora da casa — provedor E2B/Daytona | self-host.md |
+| INF-003 | **sandbox fora da casa**: computadores dos bots em provedor dedicado (E2B ou Daytona) — o mini roda só API/worker/Postgres; execução isolada, destrutível, nunca na casa | self-host.md |
+| INF-003b | **credenciais de modelo ficam na casa**: chaves de LLM cifradas no Postgres da casa sob a ENCRYPTION_KEY da instância; exportação por padrão: **nunca** — mesma lei do AVA-006 | AVA-006 |
 | INF-004 | **registro fechado**: `SIGNUP_ALLOWLIST` com a equipe do arquiteto; sem registro aberto | decisão |
-| INF-005 | **HTTPS público + origem única**: WEB_ORIGIN/BETTER_AUTH_URL/API_URL sob HTTPS com domínio próprio; sem HTTP plano | self-host.md |
-| INF-006 | **backup do estado**: dump diário do Postgres + DATA_DIR (homes de bots, perfis de browser) retido 7 dias; restauração testada trimestralmente | operação |
-| INF-007 | **custo declarado**: orçamento mensal alvo ≤ US$ 20 (Fly.io 2GB ≈ US$ 10,70; Hetzner CX22 4GB ≈ US$ 4,59 + volumes; E2B/Daytona por uso) — desvio > 20% gera revisão de spec, não silêncio | decisão |
+| INF-005 | **acesso por túnel, nunca porta aberta** (v2): HTTPS por túnel cifrado de saída — Cloudflare Tunnel com domínio próprio, ou Tailspace/Tailscale para equipe de confiança; o roteador da residência **nunca** expõe port-forward ao mini | decisão |
+| INF-006 | **mirror diário fora da casa** (v2): dump do Postgres + DATA_DIR, **cifrados**, para storage off-site (repo privado ou B2), retido 7 dias; restauração testada trimestralmente — o espelho cobre perda de dados; disponibilidade em queda longa é risco aceito | decisão |
+| INF-007 | **custo declarado** (v2): energia do mini (~10–15 W ocioso ≈ R$ 7–9/mês) + storage do mirror (~US$ 0–2) + sandbox por uso — teto ≤ US$ 20/mês mantido com folga; desvio > 20% gera revisão de spec, não silêncio | decisão |
 | INF-008 | **atualização controlada**: pin da versão do rakazo; upgrade só após changelog review — beta com breaking changes esperados | self-host.md |
-| INF-009 | **Hermes inalterado**: nada nesta base muda o Hermes CLI local do arquiteto — o D1 mensal continua no Hermes até que rotina equivalente exista e seja verificada na casa remota | decisão |
-| INF-009b | **divórcio de credenciais**: a casa remota não herda a sessão gh do arquiteto — bots que precisam de GitHub usam token fino (scopo repo de um fork ou deploy key read-only quando possível), nunca o gho_ de pessoa física | decisão |
+| INF-009 | **Hermes inalterado**: nada nesta base muda o Hermes CLI local do arquiteto — o D1 mensal continua no Hermes até que rotina equivalente exista e seja verificada na casa | decisão |
+| INF-009b | **divórcio de credenciais**: a casa não herda a sessão gh do arquiteto — bots que precisam de GitHub usam token fino (escopo repo de um fork ou deploy key read-only quando possível), nunca o gho_ de pessoa física; o mini permanece limpo de credenciais pessoais | decisão |
+| INF-010 | **resiliência elétrica**: auto-restart após queda (`pmset autorestart 1`), sleep desabilitado, UPS recomendado (não exigido); o consumo da casa é declarado — AVA-005 aplicada à infra: **a casa se conta em watts** | decisão |
+| INF-011 | **verificação de ataque**: nenhum serviço do mini escuta na interface externa além do túnel; scan externo do IP residencial não encontra portas abertas | decisão |
 
 ## O desenho
 
 ```
-   EQUIPE (browser/mobile, qualquer lugar)
-        │ HTTPS
-        ▼
+   EQUIPE (browser/mobile ── túnel cifrado ──┐
+   + MÁQUINA DO ARQUITETO = cliente)         │
+                                             ▼
 ┌─────────────────────────────────────────┐
-│ A CASA (VM always-on, Fly.io ou Hetzner)│
+│ A CASA (Mac mini 2012 dedicado,         │
+│ ethernet, sempre ligado, autorestart)   │
 │  API ─ worker ─ Postgres ─ DATA_DIR     │
 │  credenciais de modelo: cifradas aí     │
-└────────────────┬────────────────────────┘
-                 │ provedor de sandbox
-                 ▼
-┌─────────────────────────────────────────┐
-│ COMPUTERS (E2B/Daytona)                 │
-│  browser+shell por bot, efêmeros        │
-└──────────────────────────────────────── INF-003
-
-MÁQUINA DO ARQUITETO = cliente (browser) + Hermes local (terminal próprio)
+└──────┬──────────────────────┬───────────┘
+       │ túnel de saída       │ mirror diário cifrado
+       ▼ (E2B/Daytona)        ▼ (repo privado / B2)
+┌──────────────────┐   ┌──────────────────┐
+│ COMPUTERS        │   │ MIRROR OFF-SITE  │
+│ browser+shell    │   │ dados, não       │
+│ por bot, efêmeros│   │ disponibilidade  │
+└──────────────────┘   └──────────────────┘
 ```
 
 ## O que não é esta base
@@ -54,21 +56,23 @@ MÁQUINA DO ARQUITETO = cliente (browser) + Hermes local (terminal próprio)
 - Não é a ponte para "Rakazo Cloud" (não existe); é auto-hospedagem do código aberto
 - Não move o trabalho de especificação da casa: specs continuam nascendo nos repositórios, trilíngues, sob SDD
 - Não substitui o Hermes do arquiteto (INF-009)
+- Não promete alta disponibilidade: casa única, energia única — espelho é para dados
 
 ## Papéis
 
-O arquiteto decide provedor e nome de domínio, provisiona credenciais de modelo na casa. As mãos executam: provisionar a VM, subir o stack (guia self-host), configurar allowlist, validar HTTPS, testar backup. Mesmo contrato: rascunho → revisado → verificado.
+O arquiteto fornece o mini (acesso SSH), a allowlist da equipe e as credenciais de modelo. As mãos executam: preparar o mini (pmset, Docker, stack), túnel, mirror, monitor. Mesmo contrato: rascunho → revisado → verificado.
 
 ## Verificação (como esta spec se testa)
 
 | ID | Critério |
 |---|---|
-| INF-001 | uma única instância listada no provedor; nenhuma segunda instância de equipe |
-| INF-002/003 | `docker ps`/systemd na VM mostra só API/worker/Postgres; computers rodam no provedor sandbox |
-| INF-005 | curl HTTPS na origem pública: sem downgrade HTTP; certificado válido |
-| INF-006 | dump restaurado em ambiente de teste vira instância funcional |
-| INF-007 | fatura mensal ≤ US$ 20 ou revisão registrada |
+| INF-001 | uma única instância da casa; máquina de trabalho sem stack de equipe |
+| INF-002/003 | processos do mini = API/worker/Postgres/túnel; computers rodam no provedor sandbox |
+| INF-005 | acesso da equipe só por túnel; `nmap` externo do IP residencial: zero portas abertas |
+| INF-006 | mirror restaurado em ambiente de teste vira instância funcional |
+| INF-007 | custo mensal real ≤ US$ 20 ou revisão registrada |
+| INF-010 | `pmset -g` mostra autorestart 1 e sleep 0; consumo declarado no documento da casa |
 
 ---
 
-*Estado: rascunho — aguarda revisão do arquiteto. Código AGPL-3.0-or-later · Conteúdo CC BY-SA 4.0. Arquitetura e autoria: Cleiton Moura Loura.*
+*Estado: rascunho (v2 — casa no mini dedicado) — aguarda revisão do arquiteto. Código AGPL-3.0-or-later · Conteúdo CC BY-SA 4.0. Arquitetura e autoria: Cleiton Moura Loura.*
