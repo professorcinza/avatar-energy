@@ -142,6 +142,26 @@ O TeiaOS integra-se com os sistemas herdados em três círculos — **rodar o so
 | TOS-025 | **layer de integração legada**: rodar (INT-1/2), conversar (INT-3/4) e receber (INT-5) — com fronteira binária do macOS registrada (INT-6) e formatos abertos como nativos (INT-7) | decisão do arquiteto |
 | TOS-026 | **disciplina de storage em cartão** (par do MOD-015): swap em RAM (zram), nunca em cartão; logs em RAM até sincronização; base de sistema imutável (TOS-012) = leitura dominante, desgaste minimizado; criptografia de bloco obrigatória no cartão inteiro | decisão do arquiteto |
 
+## Marketplace: F-Droid como especificação base (decisão, 22/08/2026)
+
+O marketplace de software do ecossistema no modo smartphone tem **o F-Droid como spec base** — dez anos provando o modelo: só software livre, repositório assinado, sem conta, sem rastreamento.
+
+| ID | Requisito | Origem F-Droid |
+|---|---|---|
+| APL-001 | **só FOSS** no repositório oficial — nada proprietário entra | catálogo 100% livre |
+| APL-002 | **índice do repositório assinado** — o cliente verifica a árvore inteira antes de confiar | repo assinado |
+| APL-003 | **builds reproduzíveis**: apps construídos da fonte pelo repositório, verificáveis (TOS-019) | building from source |
+| APL-004 | **multi-repositório**: o protocolo é aberto — qualquer um hospeda o seu, o usuário adiciona | repos terceiros |
+| APL-005 | **sem conta, sem telemetria no cliente** — download anônimo por definição | client sem tracking |
+| APL-006 | apps nativos como pacotes confinados (TOS-012, Flatpak-class) **+ apps Android servidos pelo próprio F-Droid dentro da ponte Waydroid** (TOS-020/INT-2) — a spec base vira infraestrutura literal do modo smartphone | integração |
+| APL-007 | atualizações versionadas, canais estáveis e beta, downgrade permitido | canais |
+
+**A leitura**: o APL-006 é a economia do dia — o F-Droid não é só parâmetro, é **peça**: serve o acervo Android inteiro sem Google Play, dentro da ponte que a TOS-020 já mandou construir. Nenhuma loja proprietária, nenhum imposto de 30%, nenhum rastreio — o mercado de apps coerente com tudo o resto.
+
+| ID | Requisito | Origem |
+|---|---|---|
+| TOS-027 | **marketplace conforme APL-001–007** (spec base F-Droid) no modo smartphone | decisão do arquiteto |
+
 ## A leitura energética
 
 Cada parâmetro tem dimensão energética: base mínima = menos código em execução permanente; imutável = sistema sem *drift*, sem reinstalação de resgate; atualização atômica = **nenhum sistema quebrado pela metade** (a reinstalação é o maior desperdício de software); rollback = anti-desperdício institucionalizado. E a ponte Android (TOS-020) é o que impede o desperdício supremo: **um sistema perfeito que ninguém usa por falta de apps**.

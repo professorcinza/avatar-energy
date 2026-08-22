@@ -25,7 +25,7 @@
 | **MEC — mecânica e térmica** 🟡 | MEC-001+ (parcial: MOD-018/019 cobrem durabilidade militar; faltam tolerâncias, envelopes térmicos e alvo de IP) | trilhos e travas do MOD, tolerâncias, dimensões do conector, resistência a queda, alvo de IP, envelopes térmicos por módulo, temperatura máxima de superfície |
 | **SEG — segurança e regulatório** | SEG-001+ | bateria (UN 38.3, IEC 62133), SAR, elétrica; roteiro ANATEL/FCC/CE/RoHS do modem EXC-001 |
 | **IHU — interface humana** | IHU-001+ | tela (brilho, legibilidade ao sol), áudio, sensores, câmera (alvos, ISP), acessibilidade (o princípio de uma mão elevado a lei de UI) |
-| **APL — aplicativos e loja** | APL-001+ | repositório de apps (Flatpak-class), assinatura, UI de permissões, SDK que desenvolvedores visam — sem devs não há ecossistema |
+| **APL — aplicativos e loja** ✅ (parcial) | APL-001..007 | (coberto: F-Droid como spec base, TOS-027; falta o SDK de desenvolvedor) repositório de apps (Flatpak-class), assinatura, UI de permissões, SDK que desenvolvedores visam — sem devs não há ecossistema |
 | **MIG — migração** | MIG-001+ | detalhamento da INT-5: o que migra, de quais formatos (Android/iOS/Windows/macOS), com que garantias |
 | **ACS — atualização** | ACS-001+ | como OTA chega: manifest assinado, servidor ou P2P, canário e rollback em campo |
 | **GOV — fundação** | GOV-001+ | estatuto da fundação neutra (SYS-006), financiamento, direitos de decisão, sucessão — a instituição que sobrevive às pessoas |
