@@ -78,6 +78,26 @@ APU (celular / docks / cadeia)          ← APU-004: homogêneas
 
 *A escolha da shell adaptativa sobre o wlroots (Phosh-classe, Lomiri-classe, ou própria) fica para o arquiteto — a fundação abaixo dela está decidida.*
 
+## Jogos: 100% da biblioteca Linux aceita (decisão, 22/08/2026)
+
+**O requisito**: o Teia Phone aceita **100% da biblioteca de jogos que roda em Linux** — Steam/Proton, nativos, GOG, itch. A pilha que entrega:
+
+| Camada | Papel | Estado no TeiaOS |
+|---|---|---|
+| **Mesa/Vulkan** | fundação gráfica de tudo | já decidida (TOS-021) |
+| **DXVK / VKD3D-Proton** | Direct3D 9/10/11/12 → Vulkan | tradução madura, mainline da cena |
+| **Proton** | camada Windows→Linux da Valve | o padrão de fato, provado no Steam Deck |
+| **Box64-classe** | tradução x86-64 → ARM/RISC-V | o seguro contra a espera D1: roda o que não há binário nativo |
+| **Controles** | gamepad como HID padrão | já decidido (MOD-013) |
+
+**A honestidade de engenharia, registrada**: "100% aceita" significa **tudo roda e abre** — nativo quando existe binário nativo, tradução de API quando o jogo é Windows-origin, tradução de ISA quando o módulo é RISC-V e o jogo é x86. Tradução de ISA tem custo de desempenho — e é exatamente por isso que a **cadeia de APUs** existe: o bolso dá a mobilidade, o dock dá a folga de processamento. O gatilho D1 (APU RISC-V com USB4 mainline) ganhou um critério de qualidade implícito: desempenho de tradução suficiente para a biblioteca.
+
+**A nota de rodapé que nem o Steam Deck escapou**: jogos bloqueados por anti-cheat de kernel que não suportam Linux não são "biblioteca Linux" — estão fora por definição do requisito, não por falha do sistema.
+
+| ID | Requisito | Origem |
+|---|---|---|
+| TOS-023 | **100% da biblioteca de jogos Linux aceita**: Steam/Proton, DXVK/VKD3D, Box64-classe para ISA estrangeiro, controles HID — a biblioteca inteira abre no dispositivo, do bolso ao dock | decisão do arquiteto |
+
 ## A leitura energética
 
 Cada parâmetro tem dimensão energética: base mínima = menos código em execução permanente; imutável = sistema sem *drift*, sem reinstalação de resgate; atualização atômica = **nenhum sistema quebrado pela metade** (a reinstalação é o maior desperdício de software); rollback = anti-desperdício institucionalizado. E a ponte Android (TOS-020) é o que impede o desperdício supremo: **um sistema perfeito que ninguém usa por falta de apps**.
