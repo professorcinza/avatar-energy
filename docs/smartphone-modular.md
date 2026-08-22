@@ -1,5 +1,7 @@
 # O smartphone modular: o modelo da carcaça aberta
 
+**Princípio da abertura de hardware (arquiteto, 22/08/2026)**: *a arquitetura de todo hardware que compõe o dispositivo deve ser aberta — com raras exceções.* Aberta significa: esquemas e documentação disponíveis, interfaces publicadas, driver mainline. Exceção não é tolerância: é **registro datado, justificado e com plano de substituição** (ver `docs/hardware/excecoes.md`).
+
 **Avatar-Energy · Documento base 09 · 22 de agosto de 2026**
 
 *Retomo o artefato da base 06 e a lição da base 07 (longevidade vence otimização local) para estabelecer um modelo baseado em modularidade: a carcaça aberta.*
@@ -134,6 +136,7 @@ carcaça celular (8–10 anos)
 | MOD-011 | **modos mobile e desktop no mesmo dispositivo**, nativos e inclusos: sessão única que escala (UI adaptativa + janelas em tela externa); tela do aparelho permanece útil como touchpad/segunda tela durante o dock; sem produto separado, sem camada paga, sem nuvem obrigatória | rascunho |
 | MOD-012 | **v4 — hierarquia APU** (ver seção acima; substitui soquete de GPU e eGPU): celular, docks e docks extras — todos APU homogêneas, encadeáveis sob demanda | rascunho |
 | MOD-013 | **carcaça-jogo (gamepad)**: o smartphone encaixa em paisagem e vira portátil estilo PSP — dual sticks, D-pad, botões, gatilhos, vibração, bateria que carrega o módulo; entrada como HID padrão (evdev/SDL, mainline); variante com APU própria que entra na hierarquia MOD-012 v4 para jogos exigentes | rascunho |
+| MOD-014 | **abertura total com exceções raras**: toda peça que compõe o dispositivo tem arquitetura aberta (esquemas, documentação, driver mainline); exceção exige registro EXC com justificativa e plano de substituição | rascunho |
 
 ---
 
