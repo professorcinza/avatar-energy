@@ -17,6 +17,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Cadeias e encadeamentos](docs/cadeias-e-encadeamentos.md) | Primária→final→útil, a lei da multiplicação de eficiências, cascatas e o ciclo fechado |
 | [Specs da civilização](docs/specs-civilizacao.md) | Engenharia reversa da civilização como cliente: requisitos CIV-ENE com valor, meta e verificação |
 | [Engenharia reversa: smartphone custo-efetivo](docs/reverse-smartphone.md) | Moto G Power 2026 sob a lente de energia: 20 Wh, 420 mW médios e a economia do armazenamento |
+| [Veredito: universalização do Android](docs/veredito-universalizacao.md) | SIM, por ~10:1 — a aritmética de ciclo de vida que decide fragmentação × universalização |
 
 ## Licenças
 
