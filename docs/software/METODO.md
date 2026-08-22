@@ -44,7 +44,7 @@ Mais os dois produtos-algoritmo já previstos: **orquestrador da cadeia de APUs*
 | # | Decisão | Opções |
 |---|---|---|
 | S1 | **Onde o avatar vive** | (a) daemon em espaço de usuário sobre interfaces mainline (sem tocar no kernel — o caminho SYS-coerente); (b) módulos de kernel (exige mainline upstream, ciclo lento) |
-| S2 | **Linguagem** | Rust (segurança de memória + baixo consumo, ecossistema Linux moderno) · C (ubicuidade) · outra do arquiteto |
+| S2 | **Linguagem** | **DECIDIDA (22/08/2026): RUST** — linguagem oficial do ecossistema (norma no hub), com exceções registradas: C para upstream C, Python para ferramentaria de IA |
 | S3 | **Inteligência local** | o avatar decide por regras/otimização clássica, ou por IA local inferindo na própria cadeia de APUs (a ferramenta comendo o próprio rabo energético) |
 
 ## Fichas a abrir
