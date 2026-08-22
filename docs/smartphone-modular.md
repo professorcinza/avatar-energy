@@ -105,6 +105,7 @@ carcaça celular (8–10 anos)
 | MOD-008 | fator de forma uma mão: largura ≤ 68 mm, tela 4,7–5,4", altura ≤ 145 mm, peso ≤ 160 g, espessura ≤ 10 mm | rascunho |
 | MOD-009 | **porta única** de alta velocidade: USB-C com USB4/DP Alt Mode/PD (vídeo, dados, energia, PCIe) — sem outras portas físicas | rascunho |
 | MOD-010 | **dock-carcaça notebook** (futuro): tela + teclado + trackpad + bateria que carrega o módulo; sem SoC próprio; sessão contínua do sistema canônico | rascunho |
+| MOD-011 | **modos mobile e desktop no mesmo dispositivo**, nativos e inclusos: sessão única que escala (UI adaptativa + janelas em tela externa); tela do aparelho permanece útil como touchpad/segunda tela durante o dock; sem produto separado, sem camada paga, sem nuvem obrigatória | rascunho |
 
 ---
 
