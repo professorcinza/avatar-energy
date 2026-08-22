@@ -57,6 +57,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Os problemas nucleares](docs/problemas-nuclear.md) | Os 13 grupos: categóricos, econômicos e temporais — a referência da casa para qualquer debate nuclear |
 | [Nó de Malha MOD](docs/no-malha-mod.md) | MN-001..024: o primeiro produto MOD além do Teia Phone — a infraestrutura física da teia, autoalimentada por luz, ≤ US$ 50 |
 | [Geladeira MOD](docs/geladeira-mod.md) | REF-001..024: conservação em módulos — carcaça VIP 15 anos, compressor inverter girável, ≤ 200 kWh/ano, ≤ US$ 400 |
+| [Casa Remota](docs/casa-remota.md) | INF-001..009b: a instância rakazo da equipe — always-on remota, sandbox fora, credenciais na casa, custo ≤ US$ 20/mês |
 
 ## Versão oficial em PDF
 
