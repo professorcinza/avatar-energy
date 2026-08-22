@@ -38,6 +38,12 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [Interface e serviços](docs/interface-e-servicos.md) | IHU (tela por resultado, acessibilidade como lei, jack 3,5), MIG (migração sem nuvem) e ACS (atualização P2P) |
 | [Governança e meta](docs/governanca-e-meta.md) | GOV (a fundação que sobrevive às pessoas), i18n (PT·EN·ZH) e FMT (a gramática da esteira) |
 
+## Versão oficial em PDF
+
+| Artefato | Conteúdo |
+|---|---|
+| [Especificações Completas v1.0.0](docs/pdf/avatar-energy-especificacoes-v1.0.0.pdf) | Compêndio de 74 páginas: capa, licença CC BY-SA 4.0 explícita, créditos, sumário e os 30 documentos — gerado da árvore oficial e versionado por tag |
+
 ## Diretórios de trabalho
 
 | Diretório | Conteúdo |
