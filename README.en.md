@@ -38,6 +38,7 @@ A project of the [ponte-brasil-china](https://github.com/professorcinza/ponte-br
 | [The Second Moon](docs/segunda-lua.en.md) | Earth as deliberate reflector: precedents (Znamya, Chengdu), redirect in purity — exploratory |
 | [Industrial waste](docs/desperdicio-industrial.en.md) | The arithmetic of the disposable: two vectors, the business root (Phoebus→HAGE), the counter-specs |
 | [National energy matrix](docs/matriz-nacional.en.md) | Pros and cons per source, the ~2050 model matrix and the Brazil × China cases — trilingual by conception |
+| [The indispensable](docs/indispensavel.en.md) | From hydro downward: piece-by-piece verdicts and the synthesis — functions (firm, transport, allocate), not sources |
 
 ## Working directories
 

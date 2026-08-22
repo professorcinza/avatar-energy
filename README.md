@@ -51,6 +51,7 @@ Projeto do ecossistema [ponte-brasil-china](https://github.com/professorcinza/po
 | [A Segunda Lua](docs/segunda-lua.md) | A Terra como refletor deliberado: precedentes (Znamya, Chengdu), a operação redirecionar em pureza e as três honestidades — base exploratória |
 | [O desperdício industrial](docs/desperdicio-industrial.md) | A aritmética do descartável: os dois vetores, a raiz de negócio (Phoebus a HAGE) e a contraproposta spec por spec |
 | [Matriz energética nacional](docs/matriz-nacional.md) | Prós e contras de cada fonte, a matriz-modelo ~2050 e os casos Brasil × China — trilíngue por concepção |
+| [O indispensável](docs/indispensavel.md) | Da hidrelétrica para baixo: vereditos peça a peça e a síntese — funções (firmar, transportar, alocar), não fontes |
 
 ## Versão oficial em PDF
 

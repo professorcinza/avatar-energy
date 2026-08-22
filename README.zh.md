@@ -38,6 +38,7 @@
 | [第二月球](docs/segunda-lua.zh.md) | 地球成为有意的反射体：先例（Znamya、成都）、至纯的重定向——探索性 |
 | [工业浪费](docs/desperdicio-industrial.zh.md) | 一次性品的算术：两个向量、业务根源（Phoebus→HAGE）、反规格 |
 | [国家能源矩阵](docs/matriz-nacional.zh.md) | 各来源利弊、约 2050 模型矩阵与巴西×中国案例——构想即三语 |
+| [不可或缺者](docs/indispensavel.zh.md) | 自水电而下：逐件判词与综合——功能（firm、输、配），而非来源 |
 
 ## 工作目录
 
