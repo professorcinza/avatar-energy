@@ -44,6 +44,7 @@
 | [核能之问题](docs/problemas-nuclear.zh.md) | 十三组问题：绝对性、经济性与时间性——本家核辩论之参考 |
 | [MOD 网状网节点](docs/no-malha-mod.zh.md) | MN-001..024：Teia Phone 之外首个 MOD 产品——网之物理基础设施，光能自供，≤ $50 |
 | [MOD 冰箱](docs/geladeira-mod.zh.md) | REF-001..024：模块化保鲜——15 年 VIP 外壳、轮换变频压缩机、≤ 200 kWh/年、≤ $400 |
+| [逆向工程：AI 视频](docs/reverse-video-ia.zh.md) | 全部模型（封闭+开放）：Seedance、可灵、Sora、Veo、Wan、混元、MiniMax H3——地缘地图与 APU 可容者 |
 | [远程之家](docs/casa-remota.zh.md) | INF-001..011：团队之家于专用 Mac mini 2012——隧道无端口、沙箱在外、每日镜像、成本 ≤ US$ 20/月 |
 
 ## 工作目录
