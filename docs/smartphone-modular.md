@@ -91,6 +91,8 @@ carcaça celular (8–10 anos)
 
 **A leitura energética**: o dock-notebook é uma carcaça **sem cérebro** — sem SoC, sem RAM, sem armazenamento: ~40–60% da energia incorporada de um notebook, e como carcaça que é, **vive 10+ anos atravessando gerações de módulo**. Quem tem celular + dock abre mão do segundo computador inteiro: uma aritmética de ~1 computador menos por pessoa, por década — a mesma economia da base 09 aplicada na escala de cima. E a bateria do dock devolve: carrega o celular enquanto encaixado (PD bidirecional).
 
+**eGPU: a GPU como módulo externo** — gráficos pesados não são carregados no bolso. No modo mobile, o GPU integrado do SoC basta; no dock, a eGPU acorda (túnel PCIe pela porta única, alimentada e refrigerada pelo dock — o orçamento térmico é do dock, não do bolso). A mesma eGPU serve ao trabalho pesado de render, jogo e inferência, compartilhada entre usos — a operação **alocar** aplicada à computação gráfica: potência onde e quando precisa, zero onde não precisa. Caminho de driver: AMD/Mesa, aberto e mainline — coerente com a base 10.
+
 ## Requisitos (formato spec, para revisão do arquiteto)
 
 | ID | Requisito | Status |
@@ -106,6 +108,7 @@ carcaça celular (8–10 anos)
 | MOD-009 | **porta única** de alta velocidade: USB-C com USB4/DP Alt Mode/PD (vídeo, dados, energia, PCIe) — sem outras portas físicas | rascunho |
 | MOD-010 | **dock-carcaça notebook** (futuro): tela + teclado + trackpad + bateria que carrega o módulo; sem SoC próprio; sessão contínua do sistema canônico | rascunho |
 | MOD-011 | **modos mobile e desktop no mesmo dispositivo**, nativos e inclusos: sessão única que escala (UI adaptativa + janelas em tela externa); tela do aparelho permanece útil como touchpad/segunda tela durante o dock; sem produto separado, sem camada paga, sem nuvem obrigatória | rascunho |
+| MOD-012 | **docks aceitam eGPU, obrigatoriamente**: túnel PCIe pela porta única (USB4), hotplug no kernel mainline; a GPU é alimentada e refrigerada pelo dock, não pelo módulo; preferência por GPUs de driver aberto mainline (AMD/Mesa) | rascunho |
 
 ---
 
