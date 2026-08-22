@@ -108,7 +108,7 @@ carcaça celular (8–10 anos)
 | MOD-009 | **porta única** de alta velocidade: USB-C com USB4/DP Alt Mode/PD (vídeo, dados, energia, PCIe) — sem outras portas físicas | rascunho |
 | MOD-010 | **dock-carcaça notebook** (futuro): tela + teclado + trackpad + bateria que carrega o módulo; sem SoC próprio; sessão contínua do sistema canônico | rascunho |
 | MOD-011 | **modos mobile e desktop no mesmo dispositivo**, nativos e inclusos: sessão única que escala (UI adaptativa + janelas em tela externa); tela do aparelho permanece útil como touchpad/segunda tela durante o dock; sem produto separado, sem camada paga, sem nuvem obrigatória | rascunho |
-| MOD-012 | **docks aceitam eGPU, obrigatoriamente**: túnel PCIe pela porta única (USB4), hotplug no kernel mainline; a GPU é alimentada e refrigerada pelo dock, não pelo módulo; preferência por GPUs de driver aberto mainline (AMD/Mesa) | rascunho |
+| MOD-012 | **v2 — todos os docks conectam à eGPU**: o dock de mesa **e** a carcaça-notebook (MOD-010) aceitam GPU externa — túnel PCIe pela porta única (USB4), hotplug no kernel mainline; a carcaça-notebook oferece baia interna (OCuLink ou similar) ou porta de passagem USB4; a GPU é alimentada e refrigerada pela carcaça/dock, nunca pelo módulo; preferência por GPUs de driver aberto mainline (AMD/Mesa) | rascunho |
 
 ---
 
