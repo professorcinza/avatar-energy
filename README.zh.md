@@ -39,6 +39,7 @@
 | [工业浪费](docs/desperdicio-industrial.zh.md) | 一次性品的算术：两个向量、业务根源（Phoebus→HAGE）、反规格 |
 | [国家能源矩阵](docs/matriz-nacional.zh.md) | 各来源利弊、约 2050 模型矩阵与巴西×中国案例——构想即三语 |
 | [不可或缺者](docs/indispensavel.zh.md) | 自水电而下：逐件判词与综合——功能（firm、输、配），而非来源 |
+| [逆向工程：太阳能](docs/reverse-solar.zh.md) | 四条实测前沿：叠层 35.5%、透明 12.3%、有机 >21%、室内 38%——及各自入 MOD 之处 |
 
 ## 工作目录
 

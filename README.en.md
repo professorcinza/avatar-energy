@@ -39,6 +39,7 @@ A project of the [ponte-brasil-china](https://github.com/professorcinza/ponte-br
 | [Industrial waste](docs/desperdicio-industrial.en.md) | The arithmetic of the disposable: two vectors, the business root (Phoebus→HAGE), the counter-specs |
 | [National energy matrix](docs/matriz-nacional.en.md) | Pros and cons per source, the ~2050 model matrix and the Brazil × China cases — trilingual by conception |
 | [The indispensable](docs/indispensavel.en.md) | From hydro downward: piece-by-piece verdicts and the synthesis — functions (firm, transport, allocate), not sources |
+| [Reverse engineering: solar](docs/reverse-solar.en.md) | Four fronts measured: tandem 35.5%, transparent 12.3%, organic >21%, indoor 38% — and where each enters the MOD |
 
 ## Working directories
 
