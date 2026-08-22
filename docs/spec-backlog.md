@@ -1,0 +1,45 @@
+# Backlog de especificações
+
+**Avatar-Energy · docs/spec-backlog.md · 22 de agosto de 2026**
+
+*O mapa do que falta especificar. O arquiteto trabalha por cima desta lista.*
+
+---
+
+## 0 · Meta-trabalho sobre as specs existentes (53 em rascunho)
+
+| # | Trabalho | Quem |
+|---|---|---|
+| M-1 | **Passagem de revisão** — mover specs de `rascunho` → `revisado`, domínio a domínio (MOD → APU → TOS → SYS) | **só o arquiteto** |
+| M-2 | **Critério de verificação explícito** em cada spec — a lei 2 do SDD exige: toda spec declara *como se verifica* | arquiteto + mãos |
+| M-3 | **Auditoria de referências cruzadas** — dependências MOD↔TOS↔APU↔SYS mapeadas (ex.: TOS-021 depende de APU-007) | mãos |
+| M-4 | **Prioridade** — P0 (bloqueia produto) / P1 (essencial) / P2 (desejável) em cada spec | arquiteto |
+| M-5 | **Marcos** — M0 (protótipo virtual) / M1 (kit dev) / M2 (aparelho): quais specs fecham cada marco | arquiteto |
+
+## 1 · Domínios de spec que não existem ainda
+
+| Domínio proposto | IDs | O que cobre |
+|---|---|---|
+| **AVA — o avatar** | AVA-001+ | o nome do projeto sem specs próprias: precisão de medição (classes de erro, ex. ±1%), latência de decisão, contabilização de si mesmo, privacidade dos dados de energia (quem mede o medidor) |
+| **MAL — rede em malha** | MAL-001+ | offline-first: par-a-par entre Teia Phones (Wi-Fi Direct, BT), descoberta, roteamento em teia, LoRa como módulo futuro |
+| **MEC — mecânica e térmica** | MEC-001+ | trilhos e travas do MOD, tolerâncias, dimensões do conector, resistência a queda, alvo de IP, envelopes térmicos por módulo, temperatura máxima de superfície |
+| **SEG — segurança e regulatório** | SEG-001+ | bateria (UN 38.3, IEC 62133), SAR, elétrica; roteiro ANATEL/FCC/CE/RoHS do modem EXC-001 |
+| **IHU — interface humana** | IHU-001+ | tela (brilho, legibilidade ao sol), áudio, sensores, câmera (alvos, ISP), acessibilidade (o princípio de uma mão elevado a lei de UI) |
+| **APL — aplicativos e loja** | APL-001+ | repositório de apps (Flatpak-class), assinatura, UI de permissões, SDK que desenvolvedores visam — sem devs não há ecossistema |
+| **MIG — migração** | MIG-001+ | detalhamento da INT-5: o que migra, de quais formatos (Android/iOS/Windows/macOS), com que garantias |
+| **ACS — atualização** | ACS-001+ | como OTA chega: manifest assinado, servidor ou P2P, canário e rollback em campo |
+| **GOV — fundação** | GOV-001+ | estatuto da fundação neutra (SYS-006), financiamento, direitos de decisão, sucessão — a instituição que sobrevive às pessoas |
+| **INT-i18n** | — | localização: PT/EN/ZH mínimos em tudo (a ponte fala três línguas) |
+
+## 2 · Ordem sugerida
+
+1. **M-1** (revisão — destrava o SDD inteiro);
+2. **AVA** (o protagonista sem specs);
+3. **MAL + privacidade do avatar** (estratégicas e baratas);
+4. **MEC + SEG** (o caminho do hardware real);
+5. **APL + GOV** (o caminho do ecossistema real);
+6. O resto, na ordem que a obra pedir.
+
+---
+
+*Código AGPL-3.0-or-later · Conteúdo CC BY-SA 4.0. Arquitetura e autoria: Cleiton Moura Loura.*
