@@ -8,11 +8,13 @@
 
 ## As três decisões que precedem a escolha de peças
 
-| # | Decisão | Opções | Impacto |
-|---|---|---|---|
-| D1 | **SoC do primeiro módulo computação** | (a) ARM documentado com mainline maduro — caminho Fairphone/Qualcomm ou RK; (b) RISC-V — ainda sem APU de celular (base 10); (c) híbrido: ARM agora, soquete agnóstico esperando RISC-V | define driver, térmica, USB4 |
-| D2 | **Estratégia de modem** | (a) SoC integrado (mais eficiente, mais fechado); (b) módulo documentado separável (MOD-consistente, o último reduto da base 10) | define a carcaça e a independência de rede |
-| D3 | **Interconexão real da porta única** | verificação dura: quais SoC expõem **USB4 + DP Alt Mode** no lado celular — restrição de silício que pode reordenar D1 | define se a hierarquia APU (MOD-012 v4) fala a 40 Gbps |
+| # | Decisão | Estado |
+|---|---|---|
+| D1 | **SoC do módulo computação** | **DECIDIDA (22/08/2026): esperar o ecossistema chinês de RISC-V.** Sem módulo ARM intermediário — o soquete agnóstico de ISA (MOD-005) é o seguro que torna a espera gratuita. Princípio: **modular sempre**. Gatilho de entrada: APU RISC-V de classe celular com USB4 + driver mainline |
+| D2 | **Estratégia de modem** | aberta — acompanha D1: se o RISC-V chinês chegar com modem documentado, a decisão se resolve sozinha |
+| D3 | **Interconexão real da porta única** | adiada com D1 — verificar USB4/DP Alt Mode nos candidatos RISC-V quando existirem |
+
+**O que a espera não bloqueia**: as fichas independentes do SoC — `energia.md`, `tela.md`, `camera.md`, `carcaca.md`, `dock-notebook.md`, `gamepad.md` — podem ser especificadas agora; `computacao.md` e `porta-fabrica.md` aguardam o candidato.
 
 ## O método — ficha de especificação por módulo
 
