@@ -24,10 +24,10 @@
 | **MAL — rede em malha** ✅ | MAL-001..008 | (spec destilada da teia-rede — base 18; implementação MAL-007 segue as fichas de software) | offline-first: par-a-par entre Teia Phones (Wi-Fi Direct, BT), descoberta, roteamento em teia, LoRa como módulo futuro |
 | **MEC — mecânica e térmica** 🟡 | MEC-001+ (parcial: MOD-018/019 cobrem durabilidade militar; faltam tolerâncias, envelopes térmicos e alvo de IP) | trilhos e travas do MOD, tolerâncias, dimensões do conector, resistência a queda, alvo de IP, envelopes térmicos por módulo, temperatura máxima de superfície |
 | **SEG — segurança e regulatório** ✅ | SEG-001..006 | (base 22 — certificação por módulo) |
-| **IHU — interface humana** | IHU-001+ | tela (brilho, legibilidade ao sol), áudio, sensores, câmera (alvos, ISP), acessibilidade (o princípio de uma mão elevado a lei de UI) |
+| **IHU — interface humana** ✅ | IHU-001..007 | (base 23) |
 | **APL — aplicativos e loja** ✅ (parcial) | APL-001..007 | (coberto: F-Droid como spec base, TOS-027; falta o SDK de desenvolvedor) repositório de apps (Flatpak-class), assinatura, UI de permissões, SDK que desenvolvedores visam — sem devs não há ecossistema |
-| **MIG — migração** | MIG-001+ | detalhamento da INT-5: o que migra, de quais formatos (Android/iOS/Windows/macOS), com que garantias |
-| **ACS — atualização** | ACS-001+ | como OTA chega: manifest assinado, servidor ou P2P, canário e rollback em campo |
+| **MIG — migração** ✅ | MIG-001..005 | (base 23) |
+| **ACS — atualização** ✅ | ACS-001..004 | (base 23) |
 | **GOV — fundação** | GOV-001+ | estatuto da fundação neutra (SYS-006), financiamento, direitos de decisão, sucessão — a instituição que sobrevive às pessoas |
 | **INT-i18n** | — | localização: PT/EN/ZH mínimos em tudo (a ponte fala três línguas) |
 
