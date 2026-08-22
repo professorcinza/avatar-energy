@@ -1,3 +1,14 @@
+> **🌉 [ponte-brasil-china](https://github.com/professorcinza/ponte-brasil-china) · ecossistema de tecnologia aberta Brasil–China**
+> **🌐 https://professorcinza.github.io/avatar-energy/** · **papel:** o projeto | the project | 项目本体
+>
+> **PT** — Especificações completas do Teia Phone: MOD, TeiaOS, cadeia de APUs, rede em malha, avatar — 25 bases, ~190 requisitos, trilíngue.
+> **EN** — Complete specifications of the Teia Phone: MOD, TeiaOS, APU chain, mesh network, the avatar — 25 bases, ~190 requirements, trilingual.
+> **中文** — Teia Phone 的完整规格：MOD、TeiaOS、APU 链、网状网络与代理——25 篇文档、约 190 条需求，三语齐备。
+>
+> Licenças: código **AGPL-3.0-or-later** · conteúdo **CC BY-SA 4.0** · arquitetura e autoria: **Cleiton Moura Loura**
+
+---
+
 # Avatar-Energy
 
 **O agente da energia.**
