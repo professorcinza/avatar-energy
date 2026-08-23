@@ -1,8 +1,10 @@
 # Teia Engine: the world builds itself while you play
 
-**Avatar-Energy · Base 35 · August 22, 2026**
+**Avatar-Energy · Base 35 · August 22, 2026 · amendment v1.1 (08/22/2026)**
 
 *Architect's decision: option A — new project, own repository, own specs. Teia Engine is the ecosystem's generative AI for games: an interactive world model that goes beyond a game engine. The world isn't pre-fabricated; it's born from contract and builds itself in real time, locally, on the MOD's APU chain.*
+
+*Amendment v1.1: open research on the LingBot-World anchor concluded — state/render architecture established, decisions TE-S1..S6 signed, TE-023..030 added (detailed in [base 36](cristal-save.en.md)).*
 
 ---
 
@@ -26,10 +28,32 @@ TEIA ENGINE (world model):
 | **[MUSE/WHAM](https://www.microsoft.com/en-us/research/blog/introducing-muse-our-first-generative-ai-model-designed-for-gameplay-ideation/)** | Microsoft | ✅ | gameplay | partial | ✅ weights |
 | **[Oasis 3](https://decart.ai/oasis)** | Decart | ✅ | photorealistic | hours (driving) | API |
 | **[GameGen-X](https://gamegen-x.github.io/)** | Tencent | partial | open-world | limited | ✅ ICLR |
-| **[LingBot-World](https://arxiv.org/html/2601.20540v1)** | research | ✅ | — | limited | ✅ |
+| **[LingBot-World](https://arxiv.org/html/2601.20540v1)** | research | ✅ 16 fps @480p | 720p | 10 min | ✅ weights+code |
 | **[Odyssey](https://odyssey.ml/)** | Odyssey | ✅ | cinematic | — | ❌ |
 
 **The gap nobody closed**: everyone generates the world; **nobody generates narrative + world + persistence together, locally, open**.
+
+## The anchor: LingBot-World (reverse spec, amendment v1.1)
+
+The open research defined Teia Engine's living anchor: **[LingBot-World](https://arxiv.org/html/2601.20540v1)** — the best open world model in existence. What it is:
+
+```
+BASE:      Wan2.2 image-to-video diffusion (14B) — same family as
+           the Wan 2.6 that runs on APU (base 34)
+MOE:       2 experts × 14B (high-noise: global structure;
+           low-noise: fine detail) — 28B total, 14B active cost
+ACTION:    Plücker embeddings (rotation) + multi-hot (WASD), via AdaLN
+TRAINING:  I. general video prior → II. world+action+consistency
+           (middle) → III. causal adaptation + few-step distillation
+NUMBERS:   720p · 16 fps @480p real-time · 10 min coherent ·
+           emergent spatial memory (object intact after 60 s
+           out of view) · open weights and code
+DATA       3 sources (real video + game captures RGB+input +
+ENGINE:    Unreal synthetic) × 4 categories (navigation, sightseeing,
+           long-tail, world interaction) × 3-level hierarchical captioning
+```
+
+**Its limitations are the map of Teia's differentials**: emergent memory without explicit persistence (→ crystal, base 36), enterprise GPU (→ APU chain, TE-019), navigation-only actions (→ Mesa overlay + teia-kernel, TE-S3), no narrative (→ teia-kernel, TE-011..014), single-agent (→ MAL, TE-030). Norm IV applied: contribute upstream while differentiating on top.
 
 ## What Teia Engine has that nobody has
 
@@ -41,46 +65,35 @@ TEIA ENGINE (world model):
 | **100% local** | TOS-024: APU chain, not cloud. Genie runs in Google datacenter; Teia runs in your dock |
 | **Trilingual by conception** | world generatable in PT, EN or ZH from the first line |
 
-## Architecture
+## Architecture (v1.1 — state/render separation)
+
+Base 36's research established the engine's structural wall: **the world model is the renderer, the crystal is the world**. Canonical state is structured, small, versionable (markdown — the crystal); rendering is neural, heavy, stochastic (diffusion — the world model). The save is the crystal, not the video; the model is disposable across sessions — you can even swap anchors and the world persists.
 
 ```
-┌────────────────────────────────────────────────────────┐
-│                    TEIA ENGINE                          │
-├────────────────────────────────────────────────────────┤
-│                                                        │
-│  INPUT                                                 │
-│  ├── markdown contract (inkos-worlds)                 │
-│  ├── text prompt                                       │
-│  └── shared seed (MAL mesh)                           │
-│                    ↓                                   │
-│  ┌──────────────────┐   ┌────────────────────────┐    │
-│  │  WORLD MODEL     │   │  NARRATIVE LLM          │    │
-│  │  (visual+physics)│   │  (teia-kernel v22.0)    │    │
-│  │                  │   │                         │    │
-│  │  generates world │   │  generates story, NPCs, │    │
-│  │  real-time       │   │  quests, dialogue       │    │
-│  │  tile-by-tile    │   │  from player actions    │    │
-│  └────────┬─────────┘   └───────────┬─────────────┘    │
-│           │        │                 │                  │
-│           ▼        ▼                 ▼                  │
-│  ┌────────────────────────────────────────────────┐   │
-│  │  INTEGRATION LAYER                              │   │
-│  │  · simplified physics (collision, gravity)     │   │
-│  │  · persistent state (crystal memory)           │   │
-│  │  · quest/dialogue system                       │   │
-│  │  · rendering (Vulkan via Mesa, TOS-021)       │   │
-│  └─────────────────────┬──────────────────────────┘   │
-│                        ▼                               │
-│  OUTPUT                                                │
-│  ├── playable world on Teia Phone screen               │
-│  ├── on dock with APU chain (more world/fps)          │
-│  └── on gamepad (MOD-013, controls)                    │
-│                                                        │
-│  ALL LOCAL · ALL OPEN · ALL TRILINGUAL                │
-│  language: Rust (norm II)                              │
-│  license: AGPL-3.0-or-later                            │
-│                                                        │
-└────────────────────────────────────────────────────────┘
+CONTRACT (inkos-worlds, trilingual markdown)
+        ↓ parse
+┌─────────────────────────────────────────┐
+│  CRYSTAL — the CANONICAL WORLD          │  ← game truth
+│  event → scene → arc → world (4 levels) │     (structured, small,
+│  + action log + seed                    │      versionable, markdown)
+└────────────┬────────────────────────────┘
+             │ injects context / receives events
+   ┌─────────┴──────────┐
+   │  WORLD MODEL       │  ← neural renderer
+   │  anchor: LingBot   │     (Wan2.2 MoE, diffusion,
+   │  (real-time video) │      heavy, amnesic)
+   └─────────┬──────────┘
+             │ video
+   ┌─────────┴──────────┐
+   │  TEIA-KERNEL (LLM) │  ← drama director
+   │  NPC private minds  │    (decides at low frequency,
+   │  emergent quests    │     not frame by frame — TE-S3)
+   └────────────────────┘
+             │ decisions/events → write to the CRYSTAL
+             ▼
+   MESA/WAYLAND composites: video + dialogue overlay
+   TEIAOS · GAMEPAD MOD-013 · APU CHAIN (MOD-012)
+   MAL synchronizes CRYSTALS across machines (not videos)
 ```
 
 ## Specifications
@@ -132,19 +145,32 @@ TEIA ENGINE (world model):
 | TE-021 | worlds shareable over **MAL mesh**: each world is a file; the web distributes games P2P |
 | TE-022 | **open source AGPL-3.0**; Rust (norm II); upstream-first; no blobs |
 
+### Crystalline persistence — amendment v1.1 (detail in [base 36](cristal-save.en.md))
+
+| ID | Requirement |
+|---|---|
+| TE-023 | **declarable save policy in the contract**: free / checkpoint / diegetic with cost / permadeath — engine supports all; the world chooses |
+| TE-024 | **hierarchical lifetimes**: event is rewindable, scene/arc partially, world is permanent and survives any load |
+| TE-025 | **schema version + migrations** in every save from day 1 (the Factorio law) |
+| TE-026 | **git-diffable saves**: two saves of the same world compare via `git diff` — the save reads as a story |
+| TE-027 | **symbolic truth**: the action log is the source of truth; generated video is never verified or persisted as truth (TE-S1) |
+| TE-028 | **world model wake-up**: visual keyframe + arc caption + replay of the event log since the last keyframe (TE-S2) |
+| TE-029 | **audit at save**: contradictions between keyframes and crystal become flags in the save — the save confesses its own inconsistencies (TE-S4) |
+| TE-030 | **level-based mesh synchronization**: MAL synchronizes event near-real-time, scene/arc in batch, world by merge (TE-S6) |
+
 ## The three honesties
 
 1. **The compute gap**: Genie 3 runs at 720p/24fps in Google datacenter. The MOD's APU chain won't do photorealism locally in 2026-27 — Teia Engine starts **stylized** (Oasis voxel/Minecraft-class), which is what the APU can generate in real time today
-2. **Persistence isn't solved**: no current world model maintains cross-session consistency; OC's crystal memory is the proposal, but it's **open research**, not ready technology
+2. **Persistence isn't solved**: no current world model maintains cross-session consistency. *(amendment v1.1: base 36's [open research](cristal-save.en.md) gave crystal memory an engineering design — the unification of the 6 save schools — and the architect signed decisions TE-S1..S6. Still open research; no longer unmapped terrain)*
 3. **This is the ecosystem's most ambitious project** — more than the smartphone, more than the refrigerator. Real-time interactive world models are AI's absolute frontier. Teia Engine doesn't compete with Unity; it competes with **DeepMind**
 
 ## Development path
 
 | Phase | What | Requirement |
 |---|---|---|
-| **M0** | virtual prototype: simple world model running in QEMU with software rendering | TE-005/008 |
-| **M1** | LLM narrative integrated: teia-kernel generates quests and dialogue inside the world | TE-011/013 |
-| **M2** | persistence: crystal memory across sessions | TE-015/016 |
+| **M0** | virtual prototype: LingBot-World fork (anchor) running in QEMU with software rendering | TE-005/008 |
+| **M1** | LLM narrative integrated: teia-kernel generates quests and dialogue inside the world (Mesa overlay, TE-S3) | TE-011/013 |
+| **M2** | persistence: crystal across sessions — wake-up via keyframe+caption+replay (TE-S2) | TE-015/016/028 |
 | **M3** | hardware: real Teia Phone with APU chain, 24 fps stylized | TE-007 |
 | **M4** | dock: 60 fps, larger world, more NPCs | TE-019 |
 | **M5** | mesh: worlds shareable P2P | TE-021 |

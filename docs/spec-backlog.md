@@ -30,6 +30,7 @@
 | **ACS — atualização** ✅ | ACS-001..004 | (base 23) |
 | **GOV — fundação** ✅ | GOV-001..006 | (base 24) |
 | **INT-i18n** ✅ | I18N-001..003 | (base 24) |
+| **TE — Teia Engine** ✅ | TE-001..030 | (bases 35+36 — world model generativo; cristal/save: reverse spec das 6 escolas, decisões TE-S1..S6) |
 
 ## 1.5 · Gaps descobertos após MOD-015–019
 
